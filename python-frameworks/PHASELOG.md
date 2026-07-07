@@ -39,16 +39,28 @@
 |-------|-------|---------|------|----------|--------|
 | 01 | Testing Mastery | 15 ✅ | 15 ✅ | ✅ | ✅ Complete |
 
+## NumPy + Pandas (Complete)
+| Phase | Topic | Lessons | Code | Practice | Status |
+|-------|-------|---------|------|----------|--------|
+| 01 | NumPy Foundations | 10 ✅ | 10 ✅ | ✅ | ✅ Complete |
+| 02 | Pandas Basics | 10 ✅ | 10 ✅ | ✅ | ✅ Complete |
+| 03 | Advanced Analysis | 10 ✅ | 10 ✅ | ✅ | ✅ Complete |
+
+## scikit-learn (Complete)
+| Phase | Topic | Lessons | Code | Practice | Status |
+|-------|-------|---------|------|----------|--------|
+| 01 | Classification & Clustering | 10 ✅ | 10 ✅ | ✅ | ✅ Complete |
+| 02 | Modeling Workflow | 10 ✅ | 10 ✅ | ✅ | ✅ Complete |
+| 03 | Advanced Topics | 10 ✅ | 10 ✅ | ✅ | ✅ Complete |
+
 ## Queued Frameworks
-| NumPy + Pandas | 3 | ⬜ |
-| scikit-learn | 3 | ⬜ |
-| PyTorch | 4 | ⬜ |
-| pytest Deep | 1 | ⬜ |
-| Celery | 1 | ⬜ |
-| LangChain | 2 | ⬜ |
-| Playwright | 1 | ⬜ |
-| Pydantic | 1 | ⬜ |
-| Airflow | 2 | ⬜ |
+| Framework | Phases | Status |
+|-----------|--------|--------|
+| PyTorch | 4 | ⬜ Planned |
+| Celery | 1 | ⬜ Planned |
+| LangChain | 2 | ⬜ Planned |
+| Playwright | 1 | ⬜ Planned |
+| Airflow | 2 | ⬜ Planned |
 
 ---
 

@@ -10,8 +10,8 @@ Structured deep-dives for every major Python framework. Each follows the same pa
 | [FastAPI](./fastapi/) | ✅ Complete | 3 | 30 | Modern async APIs. Auto docs. |
 | [Flask](./flask/) | ✅ Complete | 2 | 20 | Lightweight microframework. |
 | [SQLAlchemy](./sqlalchemy/) | ✅ Complete | 2 | 20 | Python's most powerful ORM. |
-| [NumPy + Pandas](./numpy-pandas/) | ⬜ Planned | 3 | ~30 | Data manipulation foundation. |
-| [scikit-learn](./scikit-learn/) | ⬜ Planned | 3 | ~30 | Classical ML. Start here. |
+| [NumPy + Pandas](./numpy-pandas/) | ✅ Complete | 3 | 30 | Data manipulation foundation. |
+| [scikit-learn](./scikit-learn/) | ✅ Complete | 3 | 30 | Classical ML. Start here. |
 | [PyTorch](./pytorch/) | ⬜ Planned | 4 | ~40 | Deep learning. Industry standard. |
 | [pytest Deep](./pytest-deep/) | ✅ Complete | 1 | 15 | Testing mastery. |
 | [Celery](./celery/) | ⬜ Planned | 1 | ~15 | Async task queues. |
