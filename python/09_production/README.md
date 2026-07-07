@@ -25,6 +25,8 @@ Production-ready Python — project structure, testing, typing, packaging, Docke
 | 13 | [Pydantic & Settings](lessons/13-pydantic-settings.md) | [09-13-pydantic-settings.py](code/09-13-pydantic-settings.py) | 🟡 Applied |
 | 14 | [HTTPX & Requests Deep](lessons/14-httpx-requests-deep.md) | [09-14-httpx-requests-deep.py](code/09-14-httpx-requests-deep.py) | 🟡 Applied |
 | 15 | [Pytest Deep](lessons/15-pytest-deep.md) | [09-15-pytest-deep.py](code/09-15-pytest-deep.py) | 🔴 Mastery |
+| 16 | [GitHub Actions CI/CD](lessons/16-github-actions.md) | [09-16-github-actions.py](code/09-16-github-actions.py) | 🔴 Mastery |
+| 17 | [Profiling & Optimization](lessons/17-profiling-cprofile.md) | [09-17-profiling-cprofile.py](code/09-17-profiling-cprofile.py) | 🔴 Mastery |
 
 ## Integration Project
 
@@ -34,7 +36,7 @@ Production-ready Python — project structure, testing, typing, packaging, Docke
 
 ## Practice
 
-- [Exercises](practice/exercises.md) — 15 real-world exercises
+- [Exercises](practice/exercises.md) — 17 real-world exercises
 - [Solutions](practice/solutions.py)
 
 ## How to Use
@@ -62,6 +64,8 @@ python code/09-05-argparse.py --help
 - [ ] 13 — Pydantic & Settings
 - [ ] 14 — HTTPX & Requests Deep
 - [ ] 15 — Pytest Deep
+- [ ] 16 — GitHub Actions CI/CD
+- [ ] 17 — Profiling & Optimization
 - [ ] Integration Project
 - [ ] Practice Exercises
 

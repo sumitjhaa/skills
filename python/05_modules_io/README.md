@@ -21,6 +21,7 @@ Master Python's standard library — imports, math, dates, file I/O, path manage
 - [ ] 09 🟡 — [Hashlib, Secrets & UUID](./lessons/09-hashlib-secrets-uuid.md) — password hashing, tokens
 - [ ] 10 🟡 — [Subprocess & Shutil](./lessons/10-subprocess-shutil.md) — shell commands, archiving
 - [ ] 11 🟡 — [More Practical Stdlib](./lessons/11-stdlib-more.md) — decimal, configparser, glob, timeit, base64, zipfile, tempfile
+- [ ] 12 🟡 — [XML Processing](./lessons/12-xml-processing.md) — xml.etree, XPath, ElementTree
 
 ## Integration
 
@@ -28,7 +29,7 @@ Master Python's standard library — imports, math, dates, file I/O, path manage
 
 ## Practice
 
-- [Exercises](./practice/exercises.md) — 11 exercises
+- [Exercises](./practice/exercises.md) — 12 exercises
 - [Solutions](./practice/solutions.py)
 
 ## Quick Navigation

@@ -122,9 +122,54 @@ Positional arguments are required by default. If you forget one, argparse shows 
 ## 🏃 Try It
 Add a `delete` subcommand that takes a `sku` positional argument and removes the product from inventory. Also add a `--force` flag that skips the confirmation prompt.
 
+## 🆚 Alternatives: `click` & `typer`
+
+For non-trivial CLIs, many developers prefer third-party libraries over argparse:
+
+| Feature | `argparse` | `click` | `typer` |
+|---------|------------|---------|---------|
+| Boilerplate | High (parser → args → handling) | Medium (decorators) | Low (type hints) |
+| Auto help | Yes | Yes | Yes |
+| Subcommands | Manual (`add_subparsers`) | `@click.group()` | `app.command()` |
+| Type validation | Manual (`type=int`) | `type=int` | Automatic from hints |
+| Nested groups | Manual | `@group.group()` | Auto |
+| Dependencies | stdlib | `pip install click` | `pip install typer` |
+
+```python
+# click version (same inventory CLI, ~50% less code)
+import click
+
+
+@click.group()
+def cli():
+    pass
+
+
+@cli.command()
+@click.argument("sku")
+@click.argument("name")
+@click.argument("price", type=float)
+@click.option("--qty", default=1, type=int)
+def add(sku, name, price, qty):
+    click.echo(f"Added {qty} × {sku}")
+
+
+@cli.command()
+@click.argument("query")
+def search(query):
+    click.echo(f"Searching for {query}")
+
+
+if __name__ == "__main__":
+    cli()
+```
+
+Use `argparse` for simple scripts (no dependencies). Switch to `click` for multi-command CLIs. Use `typer` if you're already using type hints and want the least code.
+
 ## 🔗 Related
 - [Logging Deep](06-logging-deep.md) — logging in CLI tools
 - [Pydantic & Settings](13-pydantic-settings.md) — config validation
+- [Virtual Environments](08-virtual-envs.md) — installing third-party CLI packages
 
 ## ➡️ Next
 [Logging Deep](06-logging-deep.md)

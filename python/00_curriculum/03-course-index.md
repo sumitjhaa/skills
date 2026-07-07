@@ -77,6 +77,7 @@ Master navigation for all 10 phases. Click any lesson to jump directly.
 | 09 | [Hashlib, Secrets & UUID](../05_modules_io/lessons/09-hashlib-secrets-uuid.md) | [code](../05_modules_io/code/05-09-hashlib-secrets-uuid.py) | Applied | 12 min |
 | 10 | [Subprocess & Shutil](../05_modules_io/lessons/10-subprocess-shutil.md) | [code](../05_modules_io/code/05-10-subprocess-shutil.py) | Applied | 12 min |
 | 11 | [More Practical Stdlib](../05_modules_io/lessons/11-stdlib-more.md) | [code](../05_modules_io/code/05-11-stdlib-more.py) | Applied | 14 min |
+| 12 | [XML Processing](../05_modules_io/lessons/12-xml-processing.md) | [code](../05_modules_io/code/05-12-xml-processing.py) | Applied | 12 min |
 
 ## Phase 06 — Error Handling
 
@@ -186,6 +187,8 @@ Master navigation for all 10 phases. Click any lesson to jump directly.
 | 13 | [Pydantic & Settings](../09_production/lessons/13-pydantic-settings.md) | [code](../09_production/code/09-13-pydantic-settings.py) | Applied | 12 min |
 | 14 | [HTTPX & Requests Deep](../09_production/lessons/14-httpx-requests-deep.md) | [code](../09_production/code/09-14-httpx-requests-deep.py) | Applied | 15 min |
 | 15 | [Pytest Deep](../09_production/lessons/15-pytest-deep.md) | [code](../09_production/code/09-15-pytest-deep.py) | Mastery | 15 min |
+| 16 | [GitHub Actions CI/CD](../09_production/lessons/16-github-actions.md) | [code](../09_production/code/09-16-github-actions.py) | Mastery | 16 min |
+| 17 | [Profiling & Optimization](../09_production/lessons/17-profiling-cprofile.md) | [code](../09_production/code/09-17-profiling-cprofile.py) | Mastery | 16 min |
 
 ## Phase 10 — Ecosystem
 
@@ -207,6 +210,10 @@ Master navigation for all 10 phases. Click any lesson to jump directly.
 | 14 | [Signal, ContextVars & OS](../10_ecosystem/lessons/14-signal-contextvars.md) | [code](../10_ecosystem/code/10-14-signal-contextvars.py) | Mastery | 15 min |
 | 15 | [Web Scraping with BeautifulSoup](../10_ecosystem/lessons/15-web-scraping.md) | [code](../10_ecosystem/code/10-15-web-scraping.py) | Applied | 15 min |
 | 16 | [Python with MongoDB](../10_ecosystem/lessons/16-python-mongodb.md) | [code](../10_ecosystem/code/10-16-python-mongodb.py) | Applied | 15 min |
+| 17 | [Flask & Django](../10_ecosystem/lessons/17-flask-django.md) | [code](../10_ecosystem/code/10-17-flask-django.py) | Mastery | 16 min |
+| 18 | [JWT & OAuth Security](../10_ecosystem/lessons/18-jwt-oauth-security.md) | [code](../10_ecosystem/code/10-18-jwt-oauth-security.py) | Mastery | 16 min |
+| 19 | [Async MongoDB with Motor](../10_ecosystem/lessons/19-motor-async-mongodb.md) | [code](../10_ecosystem/code/10-19-motor-async-mongodb.py) | Mastery | 14 min |
+| 20 | [Selenium & Dynamic Scraping](../10_ecosystem/lessons/20-selenium-dynamic-scraping.md) | [code](../10_ecosystem/code/10-20-selenium-dynamic-scraping.py) | Mastery | 14 min |
 
 ---
 

@@ -1,0 +1,27 @@
+{
+  "total_posts": 100,
+  "avg_likes": 105.32,
+  "avg_shares": 23.83,
+  "top_users": [
+    {
+      "user_id": 0,
+      "total_likes": 2373
+    },
+    {
+      "user_id": 3,
+      "total_likes": 2343
+    },
+    {
+      "user_id": 1,
+      "total_likes": 2148
+    }
+  ],
+  "likes_by_user": {
+    "0": 2373,
+    "1": 2148,
+    "2": 1958,
+    "3": 2343,
+    "4": 1710
+  },
+  "generated_at": "2026-07-07T18:58:08.798063"
+}

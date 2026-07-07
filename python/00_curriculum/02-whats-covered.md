@@ -191,6 +191,9 @@ Every concept in the Python language and standard library is covered below. Chec
 - [x] `tempfile`
 - [x] `glob` — file pattern matching
 - [x] `shutil` — file operations
+- [x] `xml.etree.ElementTree` — `fromstring`, `parse`, `find`, `findall`, `iter`, `SubElement`
+- [x] XPath predicates (`[@attr="val"]`)
+- [x] XML security (XXE prevention)
 - [x] `decimal` — precise money math, `ROUND_HALF_UP`
 - [x] `configparser` — .ini/.cfg config file reading
 - [x] `timeit` — code benchmarking
@@ -413,6 +416,9 @@ Every concept in the Python language and standard library is covered below. Chec
 - [x] Virtual environments (`venv`)
 - [x] `requirements.txt`
 - [x] `pip` — install, uninstall, list, freeze
+- [x] `pipenv` — Pipfile, Pipfile.lock
+- [x] `poetry` — pyproject.toml, poetry.lock, build, publish
+- [x] `conda` — environments, packages, environment.yml
 - [x] `pyproject.toml` vs `setup.py` vs `setup.cfg`
 - [x] `logging` — levels, handlers, formatters
 - [x] `logging` — RotatingFileHandler, JSON logging
@@ -432,11 +438,15 @@ Every concept in the Python language and standard library is covered below. Chec
 - [x] Descriptors (`__get__`, `__set__`, `__delete__`)
 - [x] `__getattr__` vs `__getattribute__`
 - [x] Docker for Python (Dockerfile, multi-stage, docker-compose)
+- [x] GitHub Actions — workflows, jobs, steps, matrix strategy
+- [x] GitHub Actions — event triggers (push, PR, schedule, workflow_dispatch)
+- [x] CI/CD badge generation
 - [x] `pre-commit` hooks (ruff, mypy, black, isort)
 - [x] `Makefile` for Python development workflows
 - [x] `pydantic` — data validation, `BaseSettings`
 - [x] `httpx` — modern async HTTP client
 - [x] `requests.Session` deep (connection pooling, retries)
+- [x] `click` CLI framework — `@click.group()`, `@click.command()`, `@click.argument()`, `@click.option()`
 - [x] `pytest` fixtures deep (scope, autouse, parametrize, conftest)
 - [x] `pytest.approx()` — floating point comparison
 - [x] `pytest.raises(match=)` — error message matching
@@ -456,6 +466,7 @@ Every concept in the Python language and standard library is covered below. Chec
 - [x] `asyncio` deep — `Lock`, `Semaphore`, `Queue`, `TaskGroup`, `timeout()`, `Runner`, `run_in_executor`
 - [x] Web basics: `http.server`, `urllib`
 - [x] `requests` library (third-party)
+- [x] `flask` — routes, request/response, JSON APIs
 - [x] `fastapi` basics (third-party)
 - [x] `FastAPI` deep — dependency injection, WebSocket, background tasks, CORS
 - [x] Data science: `numpy` intro
@@ -467,7 +478,10 @@ Every concept in the Python language and standard library is covered below. Chec
 - [x] Working with APIs
 - [x] Package publish basics (`twine`, PyPI)
 - [x] Debugging with `pdb`
-- [x] Profiling with `cProfile`
+- [x] Profiling with `cProfile` — `Profile.enable()`, `disable()`
+- [x] `pstats` — sorting, filtering profiling output
+- [x] Optimization patterns (sqrt bound, cache, local variables, comprehensions)
+- [x] `lru_cache` for memoization
 - [x] Linting with `pylint`, `ruff`
 - [x] Formatting with `black`
 - [x] `socket` networking — TCP/UDP, `bind`/`listen`/`accept`, `connect`/`send`/`recv`
@@ -488,7 +502,17 @@ Every concept in the Python language and standard library is covered below. Chec
 - [x] `__aiter__`, `__anext__` — async iterators
 - [x] `__await__` — awaitable protocol
 - [x] Deployment & monitoring (environment variables, `structlog`, metrics, Docker Compose)
+- [x] JWT — token creation, verification, payload claims (sub, iat, exp)
+- [x] bcrypt / PBKDF2 — password hashing, verification, salt
+- [x] OAuth2 Authorization Code Flow
+- [x] Bearer token auth pattern (`Authorization: Bearer <token>`)
+- [x] `motor` — async MongoDB driver (`AsyncIOMotorClient`, async CRUD)
+- [x] Motor — aggregation pipeline, index creation
+- [x] `selenium` — WebDriver, headless mode, WebDriverWait, element selectors
+- [x] Selenium — `EC.presence_of_element_located`, `find_elements`, `execute_script`, screenshots
+- [x] Anti-detection strategies for scraping (user-agent, delays, proxies)
+- [x] Django web framework pattern (urls.py, views.py, serializers, ORM)
 
 ---
 
-**Total: ~520+ concepts covered across 10 phases**
+**Total: ~560+ concepts covered across 10 phases**

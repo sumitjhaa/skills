@@ -78,7 +78,38 @@ if __name__ == "__main__":
 ## 🏃 Try It
 Add a `min_price` filter to `scrape_products()` that skips products under a given price, then call it with `min_price=50`.
 
+## 🏎️ Beyond Static HTML: Selenium
+
+BeautifulSoup can't execute JavaScript. For modern SPAs (React, Vue) where content loads dynamically:
+
+```python
+# Pattern for JavaScript-rendered pages (pip install selenium webdriver-manager)
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+options = webdriver.ChromeOptions()
+options.add_argument("--headless")  # run without visible window
+driver = webdriver.Chrome(options=options)
+
+try:
+    driver.get("https://example.com")
+    # Wait for dynamic content to render
+    products = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CLASS_NAME, "product"))
+    )
+    # Now the HTML has all the JS-rendered content
+    html = driver.page_source
+    # Pass to BeautifulSoup as usual
+finally:
+    driver.quit()
+```
+
+Use `requests` + `BeautifulSoup` for static pages. Use **Selenium** for pages that load content via JavaScript. See [Selenium & Dynamic Scraping](20-selenium-dynamic-scraping.md) for the full guide.
+
 ## 🔗 Related
+- [Selenium & Dynamic Scraping](20-selenium-dynamic-scraping.md) — full dynamic scraping guide
 - [03-Web APIs](../03-web-apis.md) — consuming structured JSON APIs
 - [14-httpx-requests-deep](../../09_production/lessons/14-httpx-requests-deep.md) — HTTP client deep dive
 

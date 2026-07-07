@@ -128,3 +128,22 @@ Requirements:
 3. A test using `tmp_path` that saves/loads the cart as JSON
 4. A test using `monkeypatch` to override a discount lookup function
 5. A test using `capsys` to capture printed receipt output
+
+## Exercise 16: GitHub Actions Workflow (🔴)
+Create a `.github/workflows/ci.yml` that:
+- Triggers on `push` and `pull_request` to `main`
+- Uses a matrix strategy for Python 3.11 and 3.12
+- Runs `ruff check .`, `mypy .`, and `pytest` with coverage
+- Uploads coverage to Codecov (with a fake token for CI testing)
+- Has a `deploy` job that runs only on push to `main` after `test` passes
+
+Write a script that validates the YAML using `yaml.safe_load()` and prints the job names, matrix versions, and dependency graph.
+
+## Exercise 17: Performance Profiling (🔴)
+Write a program that processes a 50MB text file (generate one with `lorem_text * 10000`). Profile it with `cProfile`:
+1. Find the top 3 functions by cumulative time
+2. Optimize the slowest function (use `lru_cache`, local variables, or better algorithm)
+3. Profile again and report the speedup factor
+4. Use `time.perf_counter()` for before/after wall-clock comparison
+
+Demonstrate at least 5x speedup from your optimization.

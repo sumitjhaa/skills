@@ -42,16 +42,16 @@ phase/
 
 | Phase | Topic | Lessons | Integration Theme | Files |
 |-------|-------|---------|-------------------|-------|
-| 01 | Foundation | 8 | The Matrix | 13 |
+| 01 | Foundation | 9 | The Matrix | 13 |
 | 02 | Control Flow | 6 | Squid Game | 11 |
 | 03 | Collections | 10 | Harry Potter | 15 |
-| 04 | Functions | 8 | One Piece | 13 |
-| 05 | Modules & IO | 8 | Stranger Things | 13 |
-| 06 | Error Handling | 6 | Mission Impossible | 11 |
-| 07 | OOP | 12 | Marvel | 17 |
-| 08 | Advanced | 10 | Netflix | 15 |
-| 09 | Production | 10 | IMDb | 15 |
-| 10 | Ecosystem | 4 | — | 7 |
+| 04 | Functions | 10 | One Piece | 15 |
+| 05 | Modules & IO | 12 | Stranger Things | 17 |
+| 06 | Error Handling | 8 | Mission Impossible | 13 |
+| 07 | OOP | 22 | E-Commerce Order System | 27 |
+| 08 | Advanced | 30 | Netflix Recommendation Engine | 35 |
+| 09 | Production | 17 | IMDb Movie Database CLI | 18+dir |
+| 10 | Ecosystem | 20 | Social Media Analytics Dashboard | 21 |
 
 ## Coverage
 
@@ -83,5 +83,5 @@ Master index with every lesson: [03-course-index.md](03-course-index.md)
 | [06 Errors](../06_errors/README.md) | Exceptions, try/except, logging, context managers | 8 | Intermediate |
 | [07 OOP](../07_oop/README.md) | Classes, inheritance, metaclasses, SOLID, enums | 16+5 | Advanced |
 | [08 Advanced](../08_advanced/README.md) | Iterators, typing, concurrent, gc, patterns | 19+11 | Advanced |
-| [09 Production](../09_production/README.md) | Testing, packaging, Docker, CI, Pydantic | 15 | Advanced |
-| [10 Ecosystem](../10_ecosystem/README.md) | Asyncio, FastAPI, SQLAlchemy, NumPy, deployment | 14 | Advanced |
+| [09 Production](../09_production/README.md) | Testing, packaging, Docker, CI/CD, profiling | 17 | Advanced |
+| [10 Ecosystem](../10_ecosystem/README.md) | Asyncio, FastAPI, SQLAlchemy, NumPy, scraping, auth | 20 | Advanced |

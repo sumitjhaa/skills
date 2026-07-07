@@ -26,6 +26,10 @@ Production concurrency, web APIs, async patterns, FastAPI, SQLAlchemy, data scie
 | 14 | [Signal, ContextVars & OS](lessons/14-signal-contextvars.md) | [10-14-signal-contextvars.py](code/10-14-signal-contextvars.py) | 🔴 Mastery |
 | 15 | [Web Scraping with BeautifulSoup](lessons/15-web-scraping.md) | [10-15-web-scraping.py](code/10-15-web-scraping.py) | 🟡 Applied |
 | 16 | [Python with MongoDB](lessons/16-python-mongodb.md) | [10-16-python-mongodb.py](code/10-16-python-mongodb.py) | 🟡 Applied |
+| 17 | [Flask & Django](lessons/17-flask-django.md) | [10-17-flask-django.py](code/10-17-flask-django.py) | 🔴 Mastery |
+| 18 | [JWT & OAuth Security](lessons/18-jwt-oauth-security.md) | [10-18-jwt-oauth-security.py](code/10-18-jwt-oauth-security.py) | 🔴 Mastery |
+| 19 | [Async MongoDB with Motor](lessons/19-motor-async-mongodb.md) | [10-19-motor-async-mongodb.py](code/10-19-motor-async-mongodb.py) | 🔴 Mastery |
+| 20 | [Selenium & Dynamic Scraping](lessons/20-selenium-dynamic-scraping.md) | [10-20-selenium-dynamic-scraping.py](code/10-20-selenium-dynamic-scraping.py) | 🔴 Mastery |
 
 ## Integration Project
 
@@ -35,7 +39,7 @@ Production concurrency, web APIs, async patterns, FastAPI, SQLAlchemy, data scie
 
 ## Practice
 
-- [Exercises](practice/exercises.md) — 22 exercises
+- [Exercises](practice/exercises.md) — 26 exercises
 - [Solutions](practice/solutions.py)
 
 ## How to Use
@@ -65,6 +69,10 @@ python code/integration.py
 - [ ] 14 — Signal, ContextVars & OS
 - [ ] 15 — Web Scraping with BeautifulSoup
 - [ ] 16 — Python with MongoDB
+- [ ] 17 — Flask & Django
+- [ ] 18 — JWT & OAuth Security
+- [ ] 19 — Async MongoDB with Motor
+- [ ] 20 — Selenium & Dynamic Scraping
 - [ ] Integration Project
 - [ ] Practice Exercises
 

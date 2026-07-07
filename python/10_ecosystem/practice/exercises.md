@@ -138,4 +138,47 @@ catalog = ProductCatalog()  # Uses mock by default
 pid = catalog.add_product("Widget", "Electronics", 19.99, 100)
 assert len(catalog.find_by_category("Electronics")) >= 1
 catalog.apply_discount("Electronics", 10)  # 10% off
+
+---
+
+## Phase 10 Extensions — New Lessons 17–20
+
+## Exercise 23: Flask CRUD API (🔴)
+Extend the Flask demo from lesson 17 with:
+- `PUT /items/<id>` — update item (validate with Pydantic-like manual checks)
+- `DELETE /items/<id>` — delete item
+- `POST /items/bulk` — accept a list of items, return 201 with created IDs
+- Input validation: name must be 1-100 chars, price must be > 0
+
+Write a client script using `httpx` (or `urllib`) that tests all 5 endpoints and prints responses.
+
+## Exercise 24: JWT Auth Decorator (🔴)
+Build on the JWT code from lesson 18:
+1. Create a `@require_auth` decorator that extracts the `Authorization: Bearer <token>` header, verifies the JWT, and injects the user payload into the function
+2. Create a `/login` endpoint that accepts `username` + `password`, validates against a hardcoded user dict, and returns a signed JWT (valid for 1 hour)
+3. Add a `/protected` endpoint that requires `role: admin` in the JWT claims
+4. Create a `/refresh` endpoint that issues a new access token given a valid refresh token
+
+Test the flow: POST /login → get token → GET /protected with token → GET /protected with expired token (should fail).
+
+## Exercise 25: Motor + FastAPI Integration (🔴)
+Create a FastAPI app with Motor (async MongoDB):
+- `GET /products` — list products with optional `?category=X&min_price=Y&max_price=Z` and `sort=price` and `limit=N`
+- `POST /products` — create product with `name`, `price`, `category`, `stock`
+- `DELETE /products/<id>` — delete by ObjectId
+- `GET /products/stats` — aggregation pipeline returning average price per category and total stock
+
+Implement a mock fallback so the tests run without MongoDB. Write pytest tests with monkeypatch replacing `AsyncIOMotorClient`.
+
+## Exercise 26: Selenium Screenshot Bot (🔴)
+Write a Selenium script that:
+1. Opens a dummy product page (use `https://example.com` or create a local HTML file)
+2. Waits for the page to load (use `WebDriverWait`)
+3. Extracts all link texts and URLs
+4. Takes a full-page screenshot (use `driver.execute_script` to scroll and capture)
+5. Saves the screenshot as `page.png`
+6. Implements a random delay of 1–3 seconds between actions
+7. Uses `--headless` mode
+
+Run it 3 times and confirm the screenshot is created each time. Bonus: add a user-agent that mimics a real Chrome browser.
 ```

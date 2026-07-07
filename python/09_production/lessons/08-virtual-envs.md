@@ -105,9 +105,45 @@ Forgetting to activate the virtual environment before installing packages. You'l
 ## 🏃 Try It
 Create a new directory, set up a virtual environment, install `requests`, write a script that fetches `https://api.github.com`, and run it. Then `deactivate` and show that `requests` is no longer importable.
 
+## 🆚 Alternatives: `pipenv`, `poetry`, & `conda`
+
+`venv` + `pip` is the simplest setup, but other tools add convenience:
+
+| Tool | Lock File | Dependency Resolution | Why Use It |
+|------|-----------|----------------------|------------|
+| `venv` + `pip` | `requirements.txt` | Manual | Simple, stdlib, no extra install |
+| `pipenv` | `Pipfile.lock` | Automatic | Combines venv + pip + lockfile |
+| `poetry` | `poetry.lock` | Automatic | Modern, also handles packaging/publishing |
+| `conda` | `environment.yml` | Cross-platform | Data science, non-Python deps (CUDA, R) |
+
+```bash
+# pipenv
+pip install pipenv
+pipenv install requests          # creates Pipfile + Pipfile.lock
+pipenv shell                     # activates environment
+pipenv run python script.py      # runs without activating
+
+# poetry
+pip install poetry
+poetry new myproject             # creates project structure
+poetry add requests              # adds dep + updates poetry.lock
+poetry run python script.py      # runs in environment
+poetry build                     # builds wheel + sdist
+poetry publish                   # uploads to PyPI
+
+# conda (Miniconda/Anaconda)
+conda create -n myenv python=3.12
+conda activate myenv
+conda install numpy pandas
+conda env export > environment.yml
+```
+
+Use `venv` for simplicity. Use `poetry` for serious packages (it handles both envs + publishing). Use `conda` for data science projects with non-Python dependencies.
+
 ## 🔗 Related
 - [Project Structure](01-project-structure.md) — organizing packages
 - [Docker for Python](11-docker-python.md) — containers as isolated environments
+- [Packaging](10-packaging.md) — building & publishing (Poetry does this too)
 
 ## ➡️ Next
 [Mutable, Identity & Copy](09-mutable-identity.md)
