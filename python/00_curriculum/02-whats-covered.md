@@ -1,0 +1,494 @@
+# Complete Python Coverage Map
+
+Every concept in the Python language and standard library is covered below. Check off as you complete them.
+
+## Core Language (100% coverage)
+
+### Phase 01 — Foundation (~55 concepts)
+- [x] `print()` function
+- [x] Comments (`#`, `"""docstrings"""`)
+- [x] Variables and assignment
+- [x] Dynamic typing
+- [x] Naming conventions (`snake_case`)
+- [x] Multiple assignment
+- [x] Integers (`int`)
+- [x] Floats (`float`) and floating-point imprecision
+- [x] Strings (`str`) — quotes, multiline, concatenation
+- [x] Booleans (`bool`)
+- [x] `None` (`NoneType`)
+- [x] `type()` and `isinstance()`
+- [x] Arithmetic operators (`+`, `-`, `*`, `/`, `//`, `%`, `**`)
+- [x] Augmented assignment (`+=`, `-=`, etc.)
+- [x] Operator precedence
+- [x] Comparison operators (`==`, `!=`, `>`, `<`, `>=`, `<=`)
+- [x] Chained comparisons (`1 < x < 10`)
+- [x] `and`, `or`, `not`
+- [x] Short-circuit evaluation
+- [x] Truthy and falsy values
+- [x] `input()` function
+- [x] f-strings (formatted string literals)
+- [x] String formatting with `format()` and `%`
+- [x] Escape sequences
+- [x] Type casting (`int()`, `float()`, `str()`, `bool()`)
+- [x] Implicit type conversion
+- [x] `len()` — length of sequences
+- [x] `type()` — type introspection
+- [x] `range()` — numeric ranges
+- [x] `zip()` — parallel iteration
+- [x] `map()` — element-wise transformation
+- [x] `filter()` — predicate-based filtering
+- [x] `sorted()` — returns new sorted list
+- [x] `reversed()` — reverse iteration
+- [x] `enumerate()` — indexed iteration
+- [x] `any()` / `all()` — boolean checks on iterables
+- [x] `sum()` / `min()` / `max()` — aggregation
+- [x] `abs()` — absolute value
+- [x] `round()` — numeric rounding
+- [x] `isinstance()` — type checking
+
+### Phase 02 — Control Flow
+- [x] `if` statement
+- [x] `if`/`else`
+- [x] `if`/`elif`/`else`
+- [x] Nested conditionals
+- [x] Ternary expression
+- [x] `match`/`case` (Python 3.10+)
+- [x] `for` loops with `range()`
+- [x] Iterating over strings, lists, dicts
+- [x] `range(start, stop, step)`
+- [x] `enumerate()`
+- [x] `while` loops
+- [x] Infinite loops and how to avoid them
+- [x] `break` — early exit
+- [x] `continue` — skip iteration
+- [x] `pass` — placeholder
+- [x] `for`/`else` and `while`/`else`
+- [x] Nested loops
+- [x] Loop patterns: sum, count, filter, accumulate
+- [x] Flag pattern
+- [x] Early exit pattern
+
+### Phase 03 — Collections
+- [x] String indexing (`s[0]`, `s[-1]`)
+- [x] String slicing (`s[start:stop:step]`)
+- [x] String immutability
+- [x] String methods: `.upper()`, `.lower()`, `.strip()`
+- [x] `.split()`, `.join()`
+- [x] `.replace()`, `.find()`, `.count()`
+- [x] `.startswith()`, `.endswith()`
+- [x] `.isdigit()`, `.isalpha()`, `.isalnum()`
+- [x] `.capitalize()`, `.title()`, `.swapcase()`
+- [x] `.center()`, `.ljust()`, `.rjust()`
+- [x] `.zfill()`, `.expandtabs()`
+- [x] Raw strings (`r"..."`)
+- [x] `.encode()`, `.decode()`
+- [x] List creation and indexing
+- [x] List slicing
+- [x] List mutability
+- [x] `.append()`, `.insert()`, `.extend()`
+- [x] `.remove()`, `.pop()`, `.clear()`
+- [x] `.sort()` and `sorted()`
+- [x] `.reverse()` and `reversed()`
+- [x] `.index()`, `.count()`
+- [x] `.copy()` and reference behavior
+- [x] List comprehensions
+- [x] Nested list comprehensions
+- [x] Tuples — creation, immutability
+- [x] Tuple unpacking
+- [x] `_` for unused values
+- [x] Dictionaries — creation
+- [x] Dictionary access (`[]`, `.get()`)
+- [x] `.keys()`, `.values()`, `.items()`
+- [x] `.update()`, `.pop()`, `.popitem()`
+- [x] `.setdefault()`, `.fromkeys()`
+- [x] Dictionary comprehensions
+- [x] Dictionary iteration
+- [x] Sets — creation, uniqueness
+- [x] Set operations: union, intersection, difference
+- [x] `.add()`, `.remove()`, `.discard()`
+- [x]. `.issubset()`, `.issuperset()`
+- [x] `frozenset`
+- [x] `in` operator (membership)
+- [x] Nested lists (2D matrices)
+- [x] Nested dictionaries
+- [x] List of dictionaries (tabular data)
+- [x] `collections` module: `defaultdict`, `Counter`, `deque`, `OrderedDict`, `ChainMap`
+- [x] Shallow vs deep copy
+- [x] `bytes` and `bytearray`
+- [x] `complex` numbers
+- [x] `range` type
+
+### Phase 04 — Functions
+- [x] `def` — defining functions
+- [x] `return` — returning values
+- [x] Return vs print
+- [x] Parameters and arguments
+- [x] Positional arguments
+- [x] Keyword arguments
+- [x] Default parameters
+- [x] Mutable default argument trap
+- [x] `*args` — variable positional arguments
+- [x] `**kwargs` — variable keyword arguments
+- [x] Parameter ordering rules
+- [x] Scope: LEGB rule
+- [x] `global` keyword
+- [x] `nonlocal` keyword
+- [x] Closures
+- [x] `lambda` functions
+- [x] `map()`, `filter()`, `reduce()`
+- [x] Recursion
+- [x] Base case and recursive case
+- [x] Recursion depth limit
+- [x] Memoization
+- [x] `@lru_cache`
+- [x] `partial` functions
+- [x] `@singledispatch`
+- [x] Docstrings
+- [x] Type hints (`def func(x: int) -> str:`)
+- [x] `*` and `/` in function signatures (positional-only, keyword-only)
+- [x] First-class functions
+- [x] Higher-order functions
+- [x] Function composition
+- [x] Nested functions
+- [x] Error propagation in function chains
+- [x] Pipe patterns (`compose`, middleware chains)
+- [x] Exception handling in functions (raise in callee, catch in caller)
+
+### Phase 05 — Modules & IO
+- [x] `import` statement
+- [x] `from ... import ...`
+- [x] `import ... as ...`
+- [x] Module search path (`sys.path`)
+- [x] `__name__` and module execution
+- [x] Creating your own modules
+- [x] `if __name__ == "__main__"`
+- [x] `math` module
+- [x] `random` module
+- [x] `datetime`, `date`, `time`, `timedelta`
+- [x] `strftime`/`strptime` formatting
+- [x] `os` module — files, directories, paths
+- [x] `os.path`
+- [x] `sys` — argv, exit, path
+- [x] `platform` module
+- [x] File I/O: `open()`, read, write, append
+- [x] `with` statement for files
+- [x] File modes (`r`, `w`, `a`, `r+`, `b`, `x`)
+- [x] `pathlib` — `Path` objects
+- [x] `json` — dump/load, dumps/loads
+- [x] `csv` — reader/writer, DictReader/DictWriter
+- [x] `re` — search, match, findall, sub, split
+- [x] Regular expression patterns
+- [x] Capture groups
+- [x] Raw strings for regex
+- [x] `hashlib` — hashing (MD5, SHA, PBKDF2 key derivation)
+- [x] `secrets` module — cryptographically secure tokens
+- [x] `uuid` module — UUID generation (v1, v4, v5)
+- [x] `subprocess` — `run()`, `Popen`, pipes, `check_output`
+- [x] `shutil` — file copy/move, disk usage, archive operations
+- [x] `statistics` module
+- [x] `pprint` module
+- [x] `io.StringIO`
+- [x] `tempfile`
+- [x] `glob` — file pattern matching
+- [x] `shutil` — file operations
+- [x] `decimal` — precise money math, `ROUND_HALF_UP`
+- [x] `configparser` — .ini/.cfg config file reading
+- [x] `timeit` — code benchmarking
+- [x] `base64` — binary-to-text encoding (URL-safe)
+- [x] `zipfile` — create/extract ZIP archives
+- [x] `TemporaryDirectory` / `NamedTemporaryFile` — auto-cleaning temp files
+
+### Phase 06 — Error Handling
+- [x] Understanding tracebacks
+- [x] `SyntaxError`
+- [x] `NameError`
+- [x] `TypeError`
+- [x] `ValueError`
+- [x] `IndexError`
+- [x] `KeyError`
+- [x] `AttributeError`
+- [x] `ZeroDivisionError`
+- [x] `FileNotFoundError`
+- [x] `StopIteration`
+- [x] `ImportError`, `ModuleNotFoundError`
+- [x] `RuntimeError`, `RecursionError`
+- [x] `MemoryError`, `OverflowError`
+- [x] Exception hierarchy
+- [x] `try`/`except`
+- [x] Catching specific exceptions
+- [x] Multiple `except` blocks
+- [x] `except ... as e`
+- [x] `else` clause
+- [x] `finally` clause
+- [x] `raise` — raising exceptions
+- [x] `raise ... from ...` — chaining
+- [x] Custom exception classes
+- [x] `assert` — debugging assertions
+- [x] EAFP vs LBYL
+- [x] `traceback` module
+- [x] `logging` for errors
+- [x] Suppressing exceptions (`contextlib.suppress`)
+- [x] `ExceptionGroup` and `except*` (Python 3.11+)
+- [x] `warnings` module
+- [x] `atexit` — cleanup handlers
+- [x] `faulthandler` — crash debugging
+
+### Phase 07 — OOP
+- [x] Classes as blueprints
+- [x] Creating objects (instances)
+- [x] `__init__` constructor
+- [x] `self` parameter
+- [x] Instance attributes
+- [x] Instance methods
+- [x] Class attributes
+- [x] `@classmethod`
+- [x] `@staticmethod`
+- [x] `@property` — getter
+- [x] `@attribute.setter` — setter
+- [x] `@attribute.deleter`
+- [x] Encapsulation conventions (`_`, `__`)
+- [x] Name mangling
+- [x] Inheritance (`class Child(Parent):`)
+- [x] `super()` — calling parent methods
+- [x] Method overriding
+- [x] Multiple inheritance
+- [x] MRO (Method Resolution Order)
+- [x] Diamond problem
+- [x] `isinstance()` and `issubclass()`
+- [x] Polymorphism
+- [x] Duck typing
+- [x] Abstract Base Classes (`ABC`, `@abstractmethod`)
+- [x] `__str__` and `__repr__`
+- [x] `__eq__`, `__hash__`
+- [x] `__lt__`, `__le__`, `__gt__`, `__ge__`
+- [x] `@functools.total_ordering`
+- [x] `__add__`, `__sub__`, `__mul__`, `__truediv__`, `__floordiv__`, `__mod__`, `__divmod__`, `__pow__`
+- [x] `__radd__`, `__rsub__`, `__rmul__` — reflected operators (right-side)
+- [x] `__iadd__`, `__isub__`, `__imul__` — in-place augmented assignment operators
+- [x] `__neg__`, `__pos__`, `__abs__`, `__invert__` — unary operators
+- [x] `__len__`, `__bool__`
+- [x] `__getitem__`, `__setitem__`, `__delitem__`
+- [x] `__contains__` — custom `in` operator
+- [x] `__reversed__` — custom `reversed()` behavior
+- [x] `__missing__` — dict subclass default for missing keys
+- [x] `__iter__`, `__next__`
+- [x] `__call__`
+- [x] `__enter__`, `__exit__` (context managers)
+- [x] `__del__` — destructor/finalizer
+- [x] `__format__` — custom format specifiers
+- [x] `__sizeof__` — `sys.getsizeof()` support
+- [x] `__fspath__` — path-like protocol (`os.path` compatibility)
+- [x] `__index__` — integer conversion for `hex()`, `oct()`, `bin()`, slicing
+- [x] `__int__`, `__float__`, `__complex__` — numeric conversion protocol
+- [x] `__ceil__`, `__floor__`, `__round__`, `__trunc__` — math/rounding protocol
+- [x] `__dir__` — customize `dir()` output
+- [x] `__copy__`/`__deepcopy__` — copy protocol
+- [x] `__length_hint__` — iterator length estimation
+- [x] `__match_args__` — positional args for `match`/`case` pattern matching
+- [x] `__reduce__`/`__reduce_ex__` — pickle protocol
+- [x] `__slots__`
+- [x] `__getattr__` vs `__getattribute__` — dynamic attribute access
+- [x] `__setattr__`, `__delattr__` — attribute mutation hooks
+- [x] `__missing__` — dict subclass default for missing keys
+- [x] `__dir__` — customize dir() output
+- [x] `@property` patterns (cached, lazy, computed, validated)
+- [x] `@property.setter` / `.deleter` with validation
+- [x] Descriptor protocol: data vs non-data descriptors, `__set_name__`
+- [x] `dataclasses` — `@dataclass`
+- [x] `field()` options: `default`, `default_factory`, `repr`, `compare`, `hash`, `metadata`
+- [x] `__post_init__` — post-initialization validation
+- [x] `InitVar` — init-only variables
+- [x] `dataclasses.replace()`, `asdict()`, `astuple()`
+- [x] `namedtuple`
+- [x] `Enum` — `Flag`, `IntFlag`, `StrEnum`, `auto()`, `@unique`, `@verify`, `member`, `nonmember`
+- [x] Enum with methods and properties
+- [x] Composition over inheritance
+- [x] Single Responsibility Principle
+- [x] Metaclasses (`type()` as metaclass, `__new__`, metaclass conflicts)
+- [x] `__init_subclass__` — subclass registration hooks
+- [x] `__set_name__` — descriptor protocol for attribute naming
+- [x] `__class_getitem__` — runtime parameterized generics
+- [x] `enum` deep dive (`Flag`, `IntFlag`, `StrEnum`, `auto()`, `@unique`)
+- [x] SOLID principles in Python (OCP, LSP, ISP, DIP)
+
+### Phase 08 — Advanced
+- [x] Decorator pattern
+- [x] Decorators with arguments
+- [x] `@functools.wraps`
+- [x] Class-based decorators
+- [x] Multiple decorators (stacking)
+- [x] Generator functions (`yield`)
+- [x] `generator.send()`, `.throw()`, `.close()`
+- [x] `yield from`
+- [x] Generator expressions
+- [x] Iterator protocol (`__iter__`, `__next__`)
+- [x] Custom iterators
+- [x] `itertools.count`, `cycle`, `repeat`
+- [x] `itertools.chain`, `chain.from_iterable`
+- [x] `itertools.product`, `permutations`, `combinations`
+- [x] `itertools.groupby`, `accumulate`
+- [x] `itertools.compress`, `dropwhile`, `takewhile`, `filterfalse`
+- [x] `itertools.zip_longest`, `starmap`, `tee`
+- [x] `collections.Counter` — advanced
+- [x] `collections.defaultdict` — advanced patterns
+- [x] `collections.deque` — maxlen, rotation
+- [x] `collections.OrderedDict` — move_to_end
+- [x] `collections.ChainMap`
+- [x] `collections.UserList`, `UserDict`, `UserString`
+- [x] `functools.partial`
+- [x] `functools.partialmethod`
+- [x] `functools.cached_property`
+- [x] `functools.lru_cache` / `@cache`
+- [x] `functools.singledispatchmethod`
+- [x] `functools.reduce`
+- [x] `functools.singledispatch`
+- [x] `functools.wraps`, `update_wrapper`
+- [x] Context managers — `@contextmanager` with try/except/finally
+- [x] `contextlib.suppress`, `redirect_stdout`, `redirect_stderr`, `closing`
+- [x] `contextlib.ExitStack` — dynamic cleanup
+- [x] `contextlib.nullcontext` — no-op context manager
+- [x] `contextlib.chdir` (3.11+) — temporary directory change
+- [x] `contextmanager` yielding multiple values
+- [x] `operator` module (`attrgetter`, `itemgetter`, `methodcaller`)
+- [x] `string` module constants
+- [x] `fractions.Fraction`, `decimal.Decimal`
+- [x] `enum` module
+- [x] `struct` module
+- [x] `typing` module deep dive
+- [x] `TypedDict`, `Literal`, `Final`
+- [x] `TypeVar`, `Generic`, `Protocol`
+- [x] `Optional`, `Union`, `Any`, `Callable`
+- [x] `Protocol` — structural subtyping (`@runtime_checkable`)
+- [x] `NewType` — distinct type aliases
+- [x] `Annotated` — type metadata (3.9+)
+- [x] `Final` — constant typing
+- [x] `cast()` — type narrowing escape hatch
+- [x] `TypeGuard` — user-defined type narrowing
+- [x] `Never` — exhaustiveness checking
+- [x] `Self` — self-referencing return types (3.11+)
+- [x] `Unpack` / `TypeVarTuple` — variadic generics
+- [x] `ParamSpec` / `Concatenate` — callback parameter types
+- [x] `concurrent.futures` — `ThreadPoolExecutor`, `ProcessPoolExecutor`
+- [x] `weakref` — `WeakRef`, `WeakValueDictionary`, `WeakSet`, `weakref.finalize()`
+- [x] `re` deep — `compile()` with `VERBOSE`, `finditer()`, named groups, lookahead/lookbehind, Match methods
+- [x] `pathlib` deep — `glob`/`rglob`, `with_suffix`/`with_name`, `relative_to`, `resolve`, `stat`, `read_text`/`write_text`
+- [x] `contextvars` — async context (request IDs, tracing)
+- [x] `importlib` deep — `import_module`, `reload`, `resources`
+- [x] Lazy evaluation
+- [x] Iterable vs Iterator distinction
+- [x] `bisect` — array bisection algorithm (`bisect_left`, `insort`)
+- [x] `heapq` — heap queue algorithm (`heappush`, `heappop`, `nlargest`, `nsmallest`, `merge`)
+- [x] `itertools.batched` (3.12+) — batch processing
+- [x] `itertools.pairwise` (3.10+) — consecutive pairs
+- [x] `array` — typed arrays (`array('i')`, `array('d')`)
+- [x] `struct` — binary data packing/unpacking (`pack`, `unpack`)
+- [x] `pickle` — object serialization (`dump`, `load`, `__reduce__`)
+- [x] `shelve` — persistent dictionary
+- [x] `json` deep — custom `JSONEncoder`/`JSONDecoder`, `object_hook`, `ensure_ascii`, `indent`
+- [x] `csv` deep — `DictReader`/`DictWriter`, `Sniffer` dialect detection, quoting options
+- [x] `logging` deep — `dictConfig`, `RotatingFileHandler`, `extra` context, `getLogger(__name__)` pattern
+- [x] `gc` module — garbage collection (`collect`, `get_objects`, `get_referrers`, `set_debug`, `freeze`)
+- [x] `dis` module — bytecode disassembler (`dis.dis`)
+- [x] `sys` deep — `getsizeof`, `getrefcount`, `getframe`, `settrace`, `audit`
+- [x] `collections.abc` — `Container`, `Iterable`, `Sequence`, `Mapping`, `Set`, `Callable`, `Hashable`
+- [x] `__subclasshook__` — virtual subclass registration
+- [x] `__match_args__` — `match`/`case` with class patterns
+- [x] `codecs` — codec registry, custom encoding/decoding
+- [x] `unicodedata` — Unicode database (normalize, category, lookup)
+- [x] `difflib` — diff comparison (`Differ`, `HtmlDiff`, `SequenceMatcher`, `get_close_matches`)
+- [x] `textwrap` — text formatting (`wrap`, `fill`, `dedent`, `indent`)
+
+### Phase 09 — Production
+- [x] Project structure (src layout)
+- [x] `if __name__ == "__main__"` deep dive
+- [x] PEP 8 — naming, formatting, imports
+- [x] PEP 20 — The Zen of Python
+- [x] Type hints — production patterns
+- [x] `mypy` — static type checking
+- [x] `unittest` — TestCase, assertions, setUp/tearDown
+- [x] `unittest.mock` — Mock, patch, MagicMock
+- [x] `pytest` — fixtures, parametrize, conftest
+- [x] `pytest` — mocking with monkeypatch
+- [x] Code coverage (`pytest-cov`)
+- [x] Virtual environments (`venv`)
+- [x] `requirements.txt`
+- [x] `pip` — install, uninstall, list, freeze
+- [x] `pyproject.toml` vs `setup.py` vs `setup.cfg`
+- [x] `logging` — levels, handlers, formatters
+- [x] `logging` — RotatingFileHandler, JSON logging
+- [x] Logging best practices
+- [x] `argparse` — positional, optional, types, choices
+- [x] `argparse` — subparsers, groups
+- [x] Configuration management
+- [x] Environment variables (`os.environ`, `python-dotenv`)
+- [x] `configparser` — INI files
+- [x] `.env` files
+- [x] Packaging your code
+- [x] Mutability deep dive
+- [x] `is` vs `==` deep dive
+- [x] Shallow vs deep copy deep dive
+- [x] `__slots__` for memory optimization
+- [x] `__new__` vs `__init__`
+- [x] Descriptors (`__get__`, `__set__`, `__delete__`)
+- [x] `__getattr__` vs `__getattribute__`
+- [x] Docker for Python (Dockerfile, multi-stage, docker-compose)
+- [x] `pre-commit` hooks (ruff, mypy, black, isort)
+- [x] `Makefile` for Python development workflows
+- [x] `pydantic` — data validation, `BaseSettings`
+- [x] `httpx` — modern async HTTP client
+- [x] `requests.Session` deep (connection pooling, retries)
+- [x] `pytest` fixtures deep (scope, autouse, parametrize, conftest)
+- [x] `pytest.approx()` — floating point comparison
+- [x] `pytest.raises(match=)` — error message matching
+- [x] `tmp_path` fixture — temporary directories
+- [x] `capsys` fixture — stdout/stderr capture
+- [x] `monkeypatch` fixture — environment/attribute patching
+- [x] `unittest.mock` — `Mock(spec=)`, `Mock(wraps=)`, `PropertyMock`, `AsyncMock`, `patch.dict`, `patch.object`, `patch.multiple`
+- [x] `mock_open()` — mocking file I/O
+
+### Phase 10 — Ecosystem
+- [x] Concurrency: `threading` basics
+- [x] `threading` deep — `Lock`, `RLock`, `Semaphore`, `Event`, `Condition`, `Barrier`, `Timer`, `local()`
+- [x] Concurrency: `multiprocessing` basics
+- [x] `multiprocessing` deep — `Pool`, `Manager`, `Queue`, `Pipe`, shared memory, `Value`/`Array`
+- [x] `subprocess` — running shell commands
+- [x] `asyncio` — async/await introduction
+- [x] `asyncio` deep — `Lock`, `Semaphore`, `Queue`, `TaskGroup`, `timeout()`, `Runner`, `run_in_executor`
+- [x] Web basics: `http.server`, `urllib`
+- [x] `requests` library (third-party)
+- [x] `fastapi` basics (third-party)
+- [x] `FastAPI` deep — dependency injection, WebSocket, background tasks, CORS
+- [x] Data science: `numpy` intro
+- [x] Data science: `pandas` intro
+- [x] `NumPy` deep — arrays, broadcasting, vectorization
+- [x] `Pandas` deep — DataFrames, groupby, merge, time series
+- [x] `SQLAlchemy` — ORM, session management, migrations
+- [x] `sqlite3` — built-in database
+- [x] Working with APIs
+- [x] Package publish basics (`twine`, PyPI)
+- [x] Debugging with `pdb`
+- [x] Profiling with `cProfile`
+- [x] Linting with `pylint`, `ruff`
+- [x] Formatting with `black`
+- [x] `socket` networking — TCP/UDP, `bind`/`listen`/`accept`, `connect`/`send`/`recv`
+- [x] `selectors` — I/O multiplexing (`DefaultSelector`, `register`, `select`)
+- [x] `signal` — async signal handling (`signal.signal`, `signal.alarm`, `signal.set_wakeup_fd`)
+- [x] `atexit` — cleanup handlers on exit
+- [x] `faulthandler` — crash debugging (SIGSEGV, SIGABRT traceback)
+- [x] `contextvars` — `ContextVar`, `Token`, `copy_context()`, per-request context
+- [x] Web Scraping: `beautifulsoup4` — HTML parsing, `find()`/`find_all()`, CSS selectors
+- [x] Web Scraping: `httpx` for HTTP fetching
+- [x] Web Scraping: pagination patterns, rate limiting, robots.txt awareness
+- [x] MongoDB: `pymongo` — connection, `insert_one`, `insert_many`, `find`, `find_one`
+- [x] MongoDB: `update_one` (`$set`, `$inc`), `delete_one`
+- [x] MongoDB: Aggregation pipeline (`$match`, `$group`, `$sort`)
+- [x] MongoDB: `create_index`, `ObjectId`
+- [x] `asyncio` deep (`gather`, `create_task`, `wait`, `shield`, `timeout`, `Queue`, `Semaphore`)
+- [x] `__aenter__`, `__aexit__` — async context managers
+- [x] `__aiter__`, `__anext__` — async iterators
+- [x] `__await__` — awaitable protocol
+- [x] Deployment & monitoring (environment variables, `structlog`, metrics, Docker Compose)
+
+---
+
+**Total: ~520+ concepts covered across 10 phases**

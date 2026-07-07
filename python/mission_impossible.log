@@ -1,0 +1,65 @@
+2026-07-07 18:27:11,552 | INFO     | IMF Facility online
+2026-07-07 18:27:11,553 | INFO     | Entering IMF Facility — all systems green
+2026-07-07 18:27:11,553 | INFO     | Agent Ethan Hunt activated (skill=85)
+2026-07-07 18:27:11,553 | INFO     | Agent Ilsa Faust activated (skill=80)
+2026-07-07 18:27:11,553 | INFO     | Agent Benji Dunn activated (skill=65)
+2026-07-07 18:27:11,553 | INFO     | 
+==================================================
+2026-07-07 18:27:11,553 | INFO     | MISSION: Infiltrate Kremlin Vault
+2026-07-07 18:27:11,553 | INFO     | ==================================================
+2026-07-07 18:27:11,553 | INFO     | Opening secure channel in Kremlin Vault
+2026-07-07 18:27:11,553 | INFO     | Agent inserted into Kremlin Vault
+2026-07-07 18:27:11,553 | INFO     | Initiating hack on firewall...
+2026-07-07 18:27:11,553 | INFO     | Ethan Hunt: Hacking firewall (difficulty=70)
+2026-07-07 18:27:11,553 | INFO     | Ethan Hunt: firewall hacked successfully
+2026-07-07 18:27:11,553 | INFO     | Hack on firewall completed successfully
+2026-07-07 18:27:11,553 | INFO     | Initiating hack on database...
+2026-07-07 18:27:11,553 | INFO     | Ethan Hunt: Hacking database (difficulty=31)
+2026-07-07 18:27:11,553 | ERROR    | Hack on database failed
+2026-07-07 18:27:11,553 | INFO     | Closing secure channel in Kremlin Vault
+2026-07-07 18:27:11,553 | ERROR    | Mission FAILED: Hack failed on database (error 500)
+2026-07-07 18:27:11,553 | INFO     | Aborting mission, extracting Ethan Hunt...
+2026-07-07 18:27:11,553 | INFO     | Mission report: Ethan Hunt had 1 failure(s)
+2026-07-07 18:27:11,553 | INFO     | 
+==================================================
+2026-07-07 18:27:11,553 | INFO     | MISSION: Infiltrate Syndicate HQ
+2026-07-07 18:27:11,553 | INFO     | ==================================================
+2026-07-07 18:27:11,554 | INFO     | Opening secure channel in Syndicate HQ
+2026-07-07 18:27:11,554 | INFO     | Agent inserted into Syndicate HQ
+2026-07-07 18:27:11,554 | INFO     | Initiating hack on mainframe...
+2026-07-07 18:27:11,554 | INFO     | Ethan Hunt: Hacking mainframe (difficulty=45)
+2026-07-07 18:27:11,554 | INFO     | Ethan Hunt: mainframe hacked successfully
+2026-07-07 18:27:11,554 | INFO     | Hack on mainframe completed successfully
+2026-07-07 18:27:11,554 | INFO     | Initiating hack on comm-relay...
+2026-07-07 18:27:11,554 | INFO     | Ethan Hunt: Hacking comm-relay (difficulty=38)
+2026-07-07 18:27:11,554 | ERROR    | Hack on comm-relay failed
+2026-07-07 18:27:11,554 | INFO     | Closing secure channel in Syndicate HQ
+2026-07-07 18:27:11,554 | ERROR    | Mission FAILED: Hack failed on comm-relay (error 401)
+2026-07-07 18:27:11,554 | INFO     | Aborting mission, extracting Ethan Hunt...
+2026-07-07 18:27:11,554 | INFO     | Mission report: Ethan Hunt had 2 failure(s)
+2026-07-07 18:27:11,554 | WARNING  | Ethan Hunt: Too many failures — flagging review
+2026-07-07 18:27:11,554 | INFO     | 
+==================================================
+2026-07-07 18:27:11,554 | INFO     | MISSION: Infiltrate IMF Safe House
+2026-07-07 18:27:11,554 | INFO     | ==================================================
+2026-07-07 18:27:11,554 | INFO     | Opening secure channel in IMF Safe House
+2026-07-07 18:27:11,554 | INFO     | Agent inserted into IMF Safe House
+2026-07-07 18:27:11,554 | INFO     | Initiating hack on door-lock...
+2026-07-07 18:27:11,554 | INFO     | Ethan Hunt: Hacking door-lock (difficulty=73)
+2026-07-07 18:27:11,554 | ERROR    | Hack on door-lock failed
+2026-07-07 18:27:11,554 | INFO     | Closing secure channel in IMF Safe House
+2026-07-07 18:27:11,554 | ERROR    | Mission FAILED: Hack failed on door-lock (error 401)
+2026-07-07 18:27:11,554 | INFO     | Aborting mission, extracting Ethan Hunt...
+2026-07-07 18:27:11,554 | INFO     | Mission report: Ethan Hunt had 3 failure(s)
+2026-07-07 18:27:11,554 | WARNING  | Ethan Hunt: Too many failures — flagging review
+2026-07-07 18:27:11,554 | CRITICAL | Ethan Hunt: Critical failure threshold reached
+2026-07-07 18:27:11,555 | CRITICAL | SELF-DESTRUCT SEQUENCE INITIATED
+2026-07-07 18:27:11,555 | WARNING  | T-minus 5...
+2026-07-07 18:27:11,655 | WARNING  | T-minus 4...
+2026-07-07 18:27:11,755 | WARNING  | T-minus 3...
+2026-07-07 18:27:11,855 | WARNING  | T-minus 2...
+2026-07-07 18:27:11,956 | WARNING  | T-minus 1...
+2026-07-07 18:27:12,056 | CRITICAL | BOOM! IMF headquarters destroyed.
+2026-07-07 18:27:12,056 | CRITICAL | Facility lost to self-destruct
+2026-07-07 18:27:12,056 | CRITICAL | Simulation ended: Self-destruct triggered
+2026-07-07 18:27:12,056 | INFO     | Mission Impossible simulation complete

@@ -1,0 +1,81 @@
+2026-07-07 18:20:41,619 [INFO] myapp: Application started
+2026-07-07 18:20:41,620 [DEBUG] myapp.database: Connecting to database
+2026-07-07 18:20:41,620 [INFO] myapp.database: Database connected successfully
+2026-07-07 18:20:41,620 [WARNING] myapp.database: Slow query detected: SELECT * FROM movies
+2026-07-07 18:20:41,621 [INFO] myapp.api: Fetching movie data from external API
+2026-07-07 18:20:41,621 [ERROR] myapp.api: API request failed: timeout after 5s
+NoneType: None
+2026-07-07 18:20:41,622 [CRITICAL] myapp: Disk space critically low — shutting down
+2026-07-07 18:20:41,622 [INFO] myapp: User password: supersecret123
+2026-07-07 18:27:13,126 [INFO] myapp: Application started
+2026-07-07 18:27:13,126 [DEBUG] myapp.database: Connecting to database
+2026-07-07 18:27:13,126 [INFO] myapp.database: Database connected successfully
+2026-07-07 18:27:13,126 [WARNING] myapp.database: Slow query detected: SELECT * FROM movies
+2026-07-07 18:27:13,126 [INFO] myapp.api: Fetching movie data from external API
+2026-07-07 18:27:13,126 [ERROR] myapp.api: API request failed: timeout after 5s
+NoneType: None
+2026-07-07 18:27:13,126 [CRITICAL] myapp: Disk space critically low — shutting down
+2026-07-07 18:27:13,127 [INFO] myapp: User password: supersecret123
+2026-07-07 18:52:57,421 [INFO] myapp: Application started
+2026-07-07 18:52:57,421 [DEBUG] myapp.database: Connecting to database
+2026-07-07 18:52:57,422 [INFO] myapp.database: Database connected successfully
+2026-07-07 18:52:57,422 [WARNING] myapp.database: Slow query detected: SELECT * FROM movies
+2026-07-07 18:52:57,422 [INFO] myapp.api: Fetching movie data from external API
+2026-07-07 18:52:57,422 [ERROR] myapp.api: API request failed: timeout after 5s
+NoneType: None
+2026-07-07 18:52:57,423 [CRITICAL] myapp: Disk space critically low — shutting down
+2026-07-07 18:52:57,423 [INFO] myapp: User password: supersecret123
+2026-07-07 19:00:14,239 [INFO] myapp: Application started
+2026-07-07 19:00:14,239 [DEBUG] myapp.database: Connecting to database
+2026-07-07 19:00:14,239 [INFO] myapp.database: Database connected successfully
+2026-07-07 19:00:14,239 [WARNING] myapp.database: Slow query detected: SELECT * FROM movies
+2026-07-07 19:00:14,240 [INFO] myapp.api: Fetching movie data from external API
+2026-07-07 19:00:14,240 [ERROR] myapp.api: API request failed: timeout after 5s
+NoneType: None
+2026-07-07 19:00:14,240 [CRITICAL] myapp: Disk space critically low — shutting down
+2026-07-07 19:00:14,241 [INFO] myapp: User password: supersecret123
+2026-07-07 19:00:14,427 [INFO] myapp: Application started
+2026-07-07 19:00:14,427 [DEBUG] myapp.database: Connecting to database
+2026-07-07 19:00:14,427 [INFO] myapp.database: Database connected successfully
+2026-07-07 19:00:14,428 [WARNING] myapp.database: Slow query detected: SELECT * FROM movies
+2026-07-07 19:00:14,428 [INFO] myapp.api: Fetching movie data from external API
+2026-07-07 19:00:14,428 [ERROR] myapp.api: API request failed: timeout after 5s
+NoneType: None
+2026-07-07 19:00:14,429 [CRITICAL] myapp: Disk space critically low — shutting down
+2026-07-07 19:00:14,429 [INFO] myapp: User password: supersecret123
+2026-07-07 19:01:12,169 [INFO] myapp: Application started
+2026-07-07 19:01:12,169 [DEBUG] myapp.database: Connecting to database
+2026-07-07 19:01:12,169 [INFO] myapp.database: Database connected successfully
+2026-07-07 19:01:12,169 [WARNING] myapp.database: Slow query detected: SELECT * FROM movies
+2026-07-07 19:01:12,170 [INFO] myapp.api: Fetching movie data from external API
+2026-07-07 19:01:12,170 [ERROR] myapp.api: API request failed: timeout after 5s
+NoneType: None
+2026-07-07 19:01:12,170 [CRITICAL] myapp: Disk space critically low — shutting down
+2026-07-07 19:01:12,170 [INFO] myapp: User password: supersecret123
+2026-07-07 19:03:25,928 [INFO] myapp: Application started
+2026-07-07 19:03:25,929 [DEBUG] myapp.database: Connecting to database
+2026-07-07 19:03:25,929 [INFO] myapp.database: Database connected successfully
+2026-07-07 19:03:25,929 [WARNING] myapp.database: Slow query detected: SELECT * FROM movies
+2026-07-07 19:03:25,929 [INFO] myapp.api: Fetching movie data from external API
+2026-07-07 19:03:25,929 [ERROR] myapp.api: API request failed: timeout after 5s
+NoneType: None
+2026-07-07 19:03:25,930 [CRITICAL] myapp: Disk space critically low — shutting down
+2026-07-07 19:03:25,930 [INFO] myapp: User password: supersecret123
+2026-07-07 19:15:39,456 [INFO] myapp: Application started
+2026-07-07 19:15:39,456 [DEBUG] myapp.database: Connecting to database
+2026-07-07 19:15:39,457 [INFO] myapp.database: Database connected successfully
+2026-07-07 19:15:39,457 [WARNING] myapp.database: Slow query detected: SELECT * FROM movies
+2026-07-07 19:15:39,457 [INFO] myapp.api: Fetching movie data from external API
+2026-07-07 19:15:39,457 [ERROR] myapp.api: API request failed: timeout after 5s
+NoneType: None
+2026-07-07 19:15:39,458 [CRITICAL] myapp: Disk space critically low — shutting down
+2026-07-07 19:15:39,458 [INFO] myapp: User password: supersecret123
+2026-07-07 19:22:43,253 [INFO] myapp: Application started
+2026-07-07 19:22:43,253 [DEBUG] myapp.database: Connecting to database
+2026-07-07 19:22:43,253 [INFO] myapp.database: Database connected successfully
+2026-07-07 19:22:43,253 [WARNING] myapp.database: Slow query detected: SELECT * FROM movies
+2026-07-07 19:22:43,254 [INFO] myapp.api: Fetching movie data from external API
+2026-07-07 19:22:43,254 [ERROR] myapp.api: API request failed: timeout after 5s
+NoneType: None
+2026-07-07 19:22:43,254 [CRITICAL] myapp: Disk space critically low — shutting down
+2026-07-07 19:22:43,254 [INFO] myapp: User password: supersecret123

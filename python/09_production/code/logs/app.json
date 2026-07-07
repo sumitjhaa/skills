@@ -1,0 +1,27 @@
+{"time": "2026-07-07 18:20:41,620", "level": "WARNING", "logger": "myapp.database", "message": "Slow query detected: SELECT * FROM movies"}
+{"time": "2026-07-07 18:20:41,621", "level": "ERROR", "logger": "myapp.api", "message": "API request failed: timeout after 5s"}
+{"time": "2026-07-07 18:20:41,622", "level": "CRITICAL", "logger": "myapp", "message": "Disk space critically low \u2014 shutting down"}
+{"time": "2026-07-07 18:27:13,126", "level": "WARNING", "logger": "myapp.database", "message": "Slow query detected: SELECT * FROM movies"}
+{"time": "2026-07-07 18:27:13,126", "level": "ERROR", "logger": "myapp.api", "message": "API request failed: timeout after 5s"}
+{"time": "2026-07-07 18:27:13,126", "level": "CRITICAL", "logger": "myapp", "message": "Disk space critically low \u2014 shutting down"}
+{"time": "2026-07-07 18:52:57,422", "level": "WARNING", "logger": "myapp.database", "message": "Slow query detected: SELECT * FROM movies"}
+{"time": "2026-07-07 18:52:57,422", "level": "ERROR", "logger": "myapp.api", "message": "API request failed: timeout after 5s"}
+{"time": "2026-07-07 18:52:57,423", "level": "CRITICAL", "logger": "myapp", "message": "Disk space critically low \u2014 shutting down"}
+{"time": "2026-07-07 19:00:14,239", "level": "WARNING", "logger": "myapp.database", "message": "Slow query detected: SELECT * FROM movies"}
+{"time": "2026-07-07 19:00:14,240", "level": "ERROR", "logger": "myapp.api", "message": "API request failed: timeout after 5s"}
+{"time": "2026-07-07 19:00:14,240", "level": "CRITICAL", "logger": "myapp", "message": "Disk space critically low \u2014 shutting down"}
+{"time": "2026-07-07 19:00:14,428", "level": "WARNING", "logger": "myapp.database", "message": "Slow query detected: SELECT * FROM movies"}
+{"time": "2026-07-07 19:00:14,428", "level": "ERROR", "logger": "myapp.api", "message": "API request failed: timeout after 5s"}
+{"time": "2026-07-07 19:00:14,429", "level": "CRITICAL", "logger": "myapp", "message": "Disk space critically low \u2014 shutting down"}
+{"time": "2026-07-07 19:01:12,169", "level": "WARNING", "logger": "myapp.database", "message": "Slow query detected: SELECT * FROM movies"}
+{"time": "2026-07-07 19:01:12,170", "level": "ERROR", "logger": "myapp.api", "message": "API request failed: timeout after 5s"}
+{"time": "2026-07-07 19:01:12,170", "level": "CRITICAL", "logger": "myapp", "message": "Disk space critically low \u2014 shutting down"}
+{"time": "2026-07-07 19:03:25,929", "level": "WARNING", "logger": "myapp.database", "message": "Slow query detected: SELECT * FROM movies"}
+{"time": "2026-07-07 19:03:25,929", "level": "ERROR", "logger": "myapp.api", "message": "API request failed: timeout after 5s"}
+{"time": "2026-07-07 19:03:25,930", "level": "CRITICAL", "logger": "myapp", "message": "Disk space critically low \u2014 shutting down"}
+{"time": "2026-07-07 19:15:39,457", "level": "WARNING", "logger": "myapp.database", "message": "Slow query detected: SELECT * FROM movies"}
+{"time": "2026-07-07 19:15:39,457", "level": "ERROR", "logger": "myapp.api", "message": "API request failed: timeout after 5s"}
+{"time": "2026-07-07 19:15:39,458", "level": "CRITICAL", "logger": "myapp", "message": "Disk space critically low \u2014 shutting down"}
+{"time": "2026-07-07 19:22:43,253", "level": "WARNING", "logger": "myapp.database", "message": "Slow query detected: SELECT * FROM movies"}
+{"time": "2026-07-07 19:22:43,254", "level": "ERROR", "logger": "myapp.api", "message": "API request failed: timeout after 5s"}
+{"time": "2026-07-07 19:22:43,254", "level": "CRITICAL", "logger": "myapp", "message": "Disk space critically low \u2014 shutting down"}

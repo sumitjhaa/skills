@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Inception",
+    "year": 2010,
+    "rating": 9.0,
+    "genres": [
+      "Sci-Fi",
+      "Thriller"
+    ]
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "rating": 8.7,
+    "genres": [
+      "Sci-Fi",
+      "Action"
+    ]
+  }
+]
