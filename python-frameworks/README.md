@@ -8,16 +8,16 @@ Structured deep-dives for every major Python framework. Each follows the same pa
 |-----------|--------|--------|---------|----------------|
 | [Django](./django/) | ✅ Complete | 6 | 60 | Full-stack web apps. Most jobs. |
 | [FastAPI](./fastapi/) | ✅ Complete | 3 | 30 | Modern async APIs. Auto docs. |
-| [Flask](./flask/) | ⬜ Planned | 2 | ~20 | Lightweight microframework. |
-| [SQLAlchemy](./sqlalchemy/) | ⬜ Planned | 2 | ~20 | Python's most powerful ORM. |
+| [Flask](./flask/) | ✅ Complete | 2 | 20 | Lightweight microframework. |
+| [SQLAlchemy](./sqlalchemy/) | ✅ Complete | 2 | 20 | Python's most powerful ORM. |
 | [NumPy + Pandas](./numpy-pandas/) | ⬜ Planned | 3 | ~30 | Data manipulation foundation. |
 | [scikit-learn](./scikit-learn/) | ⬜ Planned | 3 | ~30 | Classical ML. Start here. |
 | [PyTorch](./pytorch/) | ⬜ Planned | 4 | ~40 | Deep learning. Industry standard. |
-| [pytest Deep](./pytest-deep/) | ⬜ Planned | 1 | ~15 | Testing mastery. |
+| [pytest Deep](./pytest-deep/) | ✅ Complete | 1 | 15 | Testing mastery. |
 | [Celery](./celery/) | ⬜ Planned | 1 | ~15 | Async task queues. |
 | [LangChain](./langchain/) | ⬜ Planned | 2 | ~20 | LLM applications. RAG. Agents. |
 | [Playwright](./playwright/) | ⬜ Planned | 1 | ~15 | Browser automation. Modern. |
-| [Pydantic](./pydantic/) | ⬜ Planned | 1 | ~10 | Data validation. Everywhere. |
+| [Pydantic](./pydantic/) | ✅ Complete | 1 | 10 | Data validation. Everywhere. |
 | [Airflow](./airflow/) | ⬜ Planned | 2 | ~20 | Data pipelines. Orchestration. |
 
 ---

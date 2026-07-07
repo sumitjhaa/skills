@@ -17,11 +17,29 @@
 | 02 | Database & Auth | 10 ✅ | 10 ✅ | ✅ | ✅ Complete |
 | 03 | Advanced & Production | 10 ✅ | 10 ✅ | ✅ | ✅ Complete |
 
+## Flask (Complete)
+| Phase | Topic | Lessons | Code | Practice | Status |
+|-------|-------|---------|------|----------|--------|
+| 01 | Flask Foundations | 10 ✅ | 10 ✅ | ✅ | ✅ Complete |
+| 02 | Production Features | 10 ✅ | 10 ✅ | ✅ | ✅ Complete |
+
+## SQLAlchemy (Complete)
+| Phase | Topic | Lessons | Code | Practice | Status |
+|-------|-------|---------|------|----------|--------|
+| 01 | Core & ORM Foundations | 10 ✅ | 10 ✅ | ✅ | ✅ Complete |
+| 02 | Advanced & Production | 10 ✅ | 10 ✅ | ✅ | ✅ Complete |
+
+## Pydantic (Complete)
+| Phase | Topic | Lessons | Code | Practice | Status |
+|-------|-------|---------|------|----------|--------|
+| 01 | Validation & Serialization | 10 ✅ | 10 ✅ | ✅ | ✅ Complete |
+
+## pytest Deep (Complete)
+| Phase | Topic | Lessons | Code | Practice | Status |
+|-------|-------|---------|------|----------|--------|
+| 01 | Testing Mastery | 15 ✅ | 15 ✅ | ✅ | ✅ Complete |
+
 ## Queued Frameworks
-| Framework | Phases | Status |
-|-----------|--------|--------|
-| Flask | 2 | ⬜ |
-| SQLAlchemy | 2 | ⬜ |
 | NumPy + Pandas | 3 | ⬜ |
 | scikit-learn | 3 | ⬜ |
 | PyTorch | 4 | ⬜ |
