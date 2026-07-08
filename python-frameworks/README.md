@@ -12,13 +12,13 @@ Structured deep-dives for every major Python framework. Each follows the same pa
 | [SQLAlchemy](./sqlalchemy/) | ✅ Complete | 2 | 20 | Python's most powerful ORM. |
 | [NumPy + Pandas](./numpy-pandas/) | ✅ Complete | 3 | 30 | Data manipulation foundation. |
 | [scikit-learn](./scikit-learn/) | ✅ Complete | 3 | 30 | Classical ML. Start here. |
-| [PyTorch](./pytorch/) | ⬜ Planned | 4 | ~40 | Deep learning. Industry standard. |
+| [PyTorch](./pytorch/) | ✅ Complete | 4 | 40 | Deep learning. Industry standard. |
 | [pytest Deep](./pytest-deep/) | ✅ Complete | 1 | 15 | Testing mastery. |
-| [Celery](./celery/) | ⬜ Planned | 1 | ~15 | Async task queues. |
-| [LangChain](./langchain/) | ⬜ Planned | 2 | ~20 | LLM applications. RAG. Agents. |
-| [Playwright](./playwright/) | ⬜ Planned | 1 | ~15 | Browser automation. Modern. |
+| [Celery](./celery/) | ✅ Complete | 1 | 15 | Async task queues. |
+| [LangChain](./langchain/) | ✅ Complete | 2 | 20 | LLM applications. RAG. Agents. |
+| [Playwright](./playwright/) | ✅ Complete | 1 | 15 | Browser automation. Modern. |
 | [Pydantic](./pydantic/) | ✅ Complete | 1 | 10 | Data validation. Everywhere. |
-| [Airflow](./airflow/) | ⬜ Planned | 2 | ~20 | Data pipelines. Orchestration. |
+| [Airflow](./airflow/) | ✅ Complete | 2 | 20 | Data pipelines. Orchestration. |
 
 ---
 
