@@ -1,395 +1,741 @@
 # Skills Roadmap — Master Plan
 
+> **Mission:** Top 0.0000001% programmer. Every concept implemented from first principles. Nothing black-boxed.
+
 All skills follow the same pattern: one concept per file, runnable code, practice exercises, integration projects.
 
 > **Status:** `⬜` Not started | `🔄` Building | `✅` Complete
 
 ---
 
-## 🟢 Tier 1 — Core (Foundation for everything else)
-
-### 1. JavaScript / TypeScript — Full-Stack Web
-**Prerequisites:** None (standalone)
-**Difficulty:** Beginner → Advanced
-**Target:** ~120 lessons, 10 phases
-**Status:** ⬜
-
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | Web Foundations | 8 | HTML5, CSS3, box model, flexbox, grid, responsive, dev tools |
-| 02 | JS Core | 10 | Variables, types, functions, objects, arrays, loops, operators |
-| 03 | JS Deep | 12 | Async/await, promises, closures, prototypes, `this`, modules, ES6+ features |
-| 04 | DOM & Browser APIs | 10 | DOM manipulation, events, fetch, localStorage, forms, Web APIs |
-| 05 | TypeScript Intro | 10 | Types, interfaces, generics, unions, enums, utility types |
-| 06 | TypeScript Deep | 10 | Advanced generics, conditional/mapped/template literal types, declarations |
-| 07 | React Fundamentals | 14 | JSX, components, props, state, hooks (useState, useEffect, useRef) |
-| 08 | React Deep | 14 | Context, reducers, custom hooks, performance, error boundaries, testing |
-| 09 | Node.js / Express | 12 | APIs, middleware, routing, auth, MongoDB/Mongoose, file uploads |
-| 10 | Next.js & Production | 12 | SSR, SSG, API routes, middleware, auth, deployment (Vercel), build tools |
-
-**Integration theme:** Full-stack SaaS dashboard (React + Next.js + Node)
+**Jump to:**
+[Python](#-tier-1--core) · [Machine Learning](#4-machine-learning--ai) · [Languages](#-tier-2--programming-languages) · [CS Foundations](#-tier-3--computer-science-foundations) · [Systems](#-tier-4--systems--infrastructure) · [Specialized Domains](#-tier-5--specialized-domains) · [Paradigms & Practices](#-tier-6--paradigms--practices) · [Math & Science](#-tier-7--math--science-frontier) · [Total Scope](#-total-scope)
 
 ---
 
-### 2. Django Backend
-**Prerequisites:** Python skill
-**Difficulty:** Intermediate → Advanced
-**Target:** ~90 lessons, 10 phases
-**Status:** ⬜
+## 🟢 Tier 1 — Core
 
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | Django Basics | 10 | Project setup, models, admin, views, templates, URLs, static files |
-| 02 | Django ORM Deep | 10 | Queries, aggregation, F/Q expressions, migrations, relationships |
-| 03 | Auth & Users | 8 | User model, permissions, groups, sessions, JWT, social auth |
-| 04 | Django REST Framework | 10 | Serializers, viewsets, routers, permissions, filtering, pagination |
-| 05 | Advanced DRF | 8 | Custom auth, throttling, versioning, HATEOAS, OpenAPI schema |
-| 06 | Async Django | 10 | Celery, Redis, Channels, WebSockets, async views, background tasks |
-| 07 | Forms & HTMX | 8 | Django forms, class-based views, HTMX, Alpine.js, django-crispy-forms |
-| 08 | Testing | 8 | pytest-django, factories (factory_boy), DRF testing, coverage |
-| 09 | Advanced Patterns | 8 | Signals, middleware, custom commands, caching, i18n/l10n, sitemaps |
-| 10 | Production | 10 | Docker, Gunicorn, Nginx, cloud deploy, CI/CD, monitoring, logging |
+### 1. JavaScript / TypeScript — Full-Stack Web
+**Target:** ~120 lessons, 10 phases | **Status:** ⬜
 
-**Integration theme:** Full SaaS product (multi-tenant, subscription, Stripe)
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Web Foundations (HTML5, CSS3, flexbox, grid, responsive, dev tools) | 8 |
+| 02 | JS Core (types, functions, objects, arrays, loops, operators, modules) | 10 |
+| 03 | JS Deep (async/await, promises, closures, prototypes, `this`, ES6+) | 12 |
+| 04 | DOM & Browser APIs (DOM, events, fetch, localStorage, forms, Web APIs) | 10 |
+| 05 | TypeScript Intro (types, interfaces, generics, unions, enums, utility types) | 10 |
+| 06 | TypeScript Deep (conditional/mapped/template literal types, declarations) | 10 |
+| 07 | React Fundamentals (JSX, components, props, state, hooks) | 14 |
+| 08 | React Deep (context, reducers, custom hooks, performance, testing) | 14 |
+| 09 | Node.js / Express (APIs, middleware, routing, auth, MongoDB) | 12 |
+| 10 | Next.js & Production (SSR, SSG, API routes, auth, deployment, build tools) | 12 |
+
+---
+
+### 2. Python + Frameworks
+**Target:** ~491 lessons (100 + 391)  | **Status:** ✅ Complete
+
+| Module | Lessons | Code |
+|--------|---------|------|
+| Python (core) | ~100 | ~100 |
+| Django | 60 | 60 |
+| FastAPI | 30 | 30 |
+| Flask | 20 | 20 |
+| SQLAlchemy | 20 | 20 |
+| NumPy + Pandas | 30 | 30 |
+| scikit-learn | 30 | 30 |
+| PyTorch | 40 | 40 |
+| pytest Deep | 15 | 15 |
+| Celery | 15 | 15 |
+| LangChain | 20 | 20 |
+| Playwright | 15 | 15 |
+| Pydantic | 10 | 10 |
+| Airflow | 20 | 20 |
+| **Total** | **~491** | **~491** |
+
+See [`python/`](python/) and [`python-frameworks/`](python-frameworks/).
 
 ---
 
 ### 3. Go / Systems Programming
-**Prerequisites:** Any programming language
-**Difficulty:** Intermediate → Advanced
-**Target:** ~80 lessons, 8 phases
-**Status:** ⬜
+**Target:** ~80 lessons, 8 phases  | **Status:** ⬜
 
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | Go Fundamentals | 12 | Variables, types, functions, structs, interfaces, packages |
-| 02 | Concurrency | 10 | Goroutines, channels, select, mutexes, sync primitives, patterns |
-| 03 | Standard Library Deep | 10 | HTTP server/client, JSON, file I/O, templates, testing |
-| 04 | HTTP Services | 10 | REST APIs, middleware, routing (chi/stdlib), OpenAPI, gRPC |
-| 05 | Database & Storage | 8 | SQL with sqlx, PostgreSQL, migrations, Redis pub/sub |
-| 06 | CLI & Tooling | 8 | Cobra/Viper, CLI design, cross-compilation, build tooling |
-| 07 | Production Go | 10 | Profiling, tracing, structured logging, graceful shutdown, benchmarking |
-| 08 | Advanced Topics | 10 | Generics, reflection, unsafe, WASM, cgo, design patterns |
-
-**Integration theme:** Distributed task runner / message broker
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Go Fundamentals (types, structs, interfaces, packages, tooling) | 12 |
+| 02 | Concurrency (goroutines, channels, select, mutexes, sync, patterns) | 10 |
+| 03 | Standard Library Deep (HTTP, JSON, I/O, templates, testing) | 10 |
+| 04 | HTTP Services (REST, middleware, routing, OpenAPI, gRPC) | 10 |
+| 05 | Database & Storage (sqlx, PostgreSQL, migrations, Redis pub/sub) | 8 |
+| 06 | CLI & Tooling (Cobra/Viper, CLI design, cross-compilation) | 8 |
+| 07 | Production Go (profiling, tracing, logging, graceful shutdown) | 10 |
+| 08 | Advanced (generics, reflection, unsafe, WASM, cgo, design patterns) | 10 |
 
 ---
-
-## 🟡 Tier 2 — Specializations (Pick based on career path)
 
 ### 4. Machine Learning & AI
-**Prerequisites:** Python, NumPy, Pandas basics
-**Difficulty:** Advanced
-**Target:** ~90 lessons, 9 phases
-**Status:** ⬜
+**Target:** ~371 lessons, 12 phases  | **Status:** ✅ Complete
 
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | Math Foundations | 10 | Linear algebra, calculus, probability, statistics (with Python) |
-| 02 | ML Fundamentals | 10 | scikit-learn, supervised/unsupervised, train/test split, metrics |
-| 03 | Classical ML | 10 | Regression, classification, clustering, ensembles, SVMs, PCA |
-| 04 | Deep Learning | 12 | PyTorch, neural networks, backpropagation, CNNs, RNNs, LSTMs |
-| 05 | Natural Language Processing | 10 | Tokenization, embeddings, transformers, BERT, attention mechanism |
-| 06 | LLMs & GenAI | 12 | Prompt engineering, RAG, fine-tuning, LangChain, vector databases |
-| 07 | Computer Vision | 10 | Image processing, CNNs, object detection (YOLO), segmentation |
-| 08 | MLOps | 10 | Model deployment, monitoring, A/B testing, feature stores, drift detection |
-| 09 | Responsible AI | 6 | Bias, fairness, explainability (SHAP, LIME), privacy, security |
+| Phase | Topic | Lessons | Code |
+|-------|-------|---------|------|
+| 01 | Linear Algebra | 30 | 30 |
+| 02 | Calculus & Optimization | 40 | 40 |
+| 03 | Probability & Statistics | 40 | 40 |
+| 04 | Information Theory & Advanced Math | 36 | 36 |
+| 05 | Classical ML (from scratch) | 55 | 55 |
+| 06 | Deep Learning Foundations | 32 | 32 |
+| 07 | Advanced Architectures (KAN, Mamba, Diffusion) | 30 | 30 |
+| 08 | Computer Vision | 31 | 31 |
+| 09 | NLP & LLMs | 30 | 30 |
+| 10 | Reinforcement Learning | 20 | 20 |
+| 11 | MLOps & Engineering | 16 | 16 |
+| 12 | Grand Capstones | 11 | 11 |
 
-**Integration theme:** Multi-modal AI assistant with RAG
-
----
-
-### 5. Data Engineering
-**Prerequisites:** Python, SQL basics
-**Difficulty:** Advanced
-**Target:** ~70 lessons, 7 phases
-**Status:** ⬜
-
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | SQL Deep | 10 | Window functions, CTEs, recursive queries, query optimization, indexes |
-| 02 | Python Data Stack | 12 | Pandas deep, PySpark, data validation (Great Expectations), Dask |
-| 03 | Data Modeling | 8 | Star schema, snowflake, slowly changing dimensions, fact tables, ERDs |
-| 04 | ETL/ELT Pipelines | 12 | Airflow (DAGs, operators, sensors), dbt (models, tests, docs), Dagster |
-| 05 | Streaming | 10 | Kafka (producers, consumers, topics, connect), Flink, Kinesis |
-| 06 | Data Warehouses | 10 | Snowflake/BigQuery/Redshift, partitioning, clustering, materialized views |
-| 07 | Production Data Engineering | 8 | Data quality, lineage, orchestration, cost optimization, monitoring |
-
-**Integration theme:** Real-time analytics pipeline (Kafka → Spark → Snowflake → dbt)
+See [`machine-learning/`](machine-learning/). Full interconnect at [`machine-learning/INDEX.md`](machine-learning/INDEX.md).
 
 ---
 
-### 6. DevOps & Cloud Engineering
-**Prerequisites:** At least one deployed application
-**Difficulty:** Advanced
-**Target:** ~90 lessons, 8 phases
-**Status:** ⬜
+## 🟡 Tier 2 — Programming Languages
 
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | Linux Deep | 10 | File system, processes, networking, shell scripting, systemd, permissions |
-| 02 | AWS / Cloud Core | 14 | EC2, S3, RDS, VPC, IAM, Lambda, CloudWatch, Route53 |
-| 03 | Infrastructure as Code | 12 | Terraform (resources, modules, state, workspaces, remote backends) |
-| 04 | Docker Deep | 10 | Multi-stage builds, networking, volumes, security, Compose, registries |
-| 05 | Kubernetes | 14 | Pods, deployments, services, ingresses, ConfigMaps, Helm, operators |
-| 06 | CI/CD & GitOps | 10 | GitHub Actions advanced, ArgoCD, GitOps, canary/blue-green deployments |
-| 07 | Observability | 10 | Prometheus, Grafana, Loki, Tempo, OpenTelemetry, structured logging |
-| 08 | Security & Compliance | 10 | Secrets management, network policies, IAM, audit, SOC2, incident response |
+### 5. Rust
+**Target:** ~100 lessons, 10 phases  | **Status:** ⬜
 
-**Integration theme:** Production-grade microservices platform with monitoring
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Rust Fundamentals (ownership, borrowing, lifetimes, traits, enums, pattern matching) | 12 |
+| 02 | Type System Deep (generics, trait bounds, associated types, GATs, HRTB) | 10 |
+| 03 | Memory Model (allocators, Box/Rc/Arc, Cell/RefCell, Pin, unsafe, raw pointers) | 10 |
+| 04 | Concurrency (Send/Sync, scoped threads, channels, Mutex/RwLock, atomics, rayon) | 10 |
+| 05 | Async Rust (Tokio, async/await, futures, streams, async traits, select) | 12 |
+| 06 | FFI & Interop (C bindings, `#[no_mangle]`, cbindgen, wasm-bindgen) | 8 |
+| 07 | Embedded Rust (no_std, HAL, PAC, RTIC, embassy, display drivers) | 8 |
+| 08 | Systems Programming (networking, file systems, OS primitives, io_uring) | 10 |
+| 09 | WebAssembly (wasm-pack, wasm-bindgen, web-sys, js-sys, wasi) | 10 |
+| 10 | Advanced (macros, proc macros, build scripts, compiler plugins, fuzzing) | 10 |
 
----
-
-### 7. System Design
-**Prerequisites:** Built and deployed at least one real app
-**Difficulty:** Advanced
-**Target:** ~50 lessons, 6 phases
-**Status:** ⬜
-
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | Foundations | 8 | CAP theorem, consistency models, latency/throughput, trade-offs |
-| 02 | Data Storage | 10 | SQL vs NoSQL, sharding, replication, indexing, caching (Redis deep) |
-| 03 | Communication | 8 | REST, GraphQL, gRPC, message queues (Kafka, RabbitMQ), event-driven |
-| 04 | Microservices | 10 | Service decomposition, API gateways, circuit breakers, service mesh |
-| 05 | Scalability | 8 | Load balancing, CDN, horizontal scaling, rate limiting, backpressure |
-| 06 | Real-World Systems | 6 | Design: URL shortener, chat, Twitter, YouTube, Uber, Netflix |
-
-**Integration theme:** Design portfolio with 10 system designs
+**Integration theme:** Database engine or game engine
 
 ---
 
-### 8. Mobile Development (React Native)
-**Prerequisites:** JavaScript/TypeScript skill
-**Difficulty:** Intermediate → Advanced
-**Target:** ~60 lessons, 6 phases
-**Status:** ⬜
+### 6. C / C++
+**Target:** ~120 lessons, 12 phases  | **Status:** ⬜
 
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | React Native Basics | 12 | Components, navigation, styling, platform APIs, Expo |
-| 02 | State & Data | 10 | State management, async storage, REST APIs, GraphQL clients |
-| 03 | Native Features | 10 | Camera, location, notifications, biometrics, file system |
-| 04 | Performance & Polish | 8 | Animation (Reanimated), gestures, lists, profiling, accessibility |
-| 05 | Stores & Auth | 10 | App Store/Play Store, in-app purchases, auth flows, deep linking |
-| 06 | Production | 10 | Testing, CI/CD, crash reporting, analytics, app updates |
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | C Fundamentals (pointers, memory layout, structs, preprocessor, stdlib) | 12 |
+| 02 | C Memory Deep (malloc/free, heap/stack, memory pools, fragmentation) | 10 |
+| 03 | C++ Fundamentals (classes, RAII, templates, STL, operator overloading) | 12 |
+| 04 | C++ Move Semantics (rvalue references, move constructors, perfect forwarding) | 8 |
+| 05 | C++ Templates Deep (SFINAE, CRTP, variadic, constexpr, concepts/C++20) | 10 |
+| 06 | C++ Concurrency (threads, async, futures, promises, memory ordering) | 10 |
+| 07 | C++ Performance (SIMD, cache optimization, profile-guided, link-time opt) | 10 |
+| 08 | Build Systems (CMake, Make, Meson, Ninja, vcpkg, Conan) | 8 |
+| 09 | Debugging & Tooling (GDB, Valgrind, Sanitizers, perf, strace, ltrace) | 8 |
+| 10 | Linkers & Loaders (symbol resolution, relocation, dynamic linking, PIC) | 8 |
+| 11 | Windows Programming (Win32 API, COM, DLLs, MSVC toolchain) | 12 |
+| 12 | Real-World C++ (game engines, browsers, compilers, databases) | 12 |
 
-**Integration theme:** Full-featured social media app
-
----
-
-## 🔴 Tier 3 — Niche / Advanced (Optional, high-value in specific domains)
-
-### 9. Cybersecurity
-**Prerequisites:** Networking basics, any programming language
-**Difficulty:** Advanced
-**Target:** ~60 lessons, 6 phases
-**Status:** ⬜
-
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | Foundations | 8 | Threat modeling, CIA triad, cryptography basics, risk assessment |
-| 02 | Network Security | 10 | Firewalls, VPNs, IDS/IPS, Wireshark, nmap, protocols |
-| 03 | Web Application Security | 12 | OWASP Top 10, SQL injection, XSS, CSRF, SSRF, auth bypass |
-| 04 | Penetration Testing | 10 | Metasploit, Burp Suite, exploit development, bug bounty methodology |
-| 05 | Defensive Security | 10 | SIEM (Splunk/ELK), incident response, forensics, malware analysis |
-| 06 | Cloud & DevSecOps | 10 | Cloud security (AWS/GCP), SAST/DAST, secrets scanning, compliance |
-
-**Integration theme:** Security audit + penetration test of a sample web app
+**Integration theme:** Build a real database or game engine
 
 ---
 
-### 10. Data Analytics & Visualization
-**Prerequisites:** Python, SQL basics
-**Difficulty:** Intermediate
-**Target:** ~50 lessons, 5 phases
-**Status:** ⬜
+### 7. Java / Kotlin
+**Target:** ~100 lessons, 10 phases  | **Status:** ⬜
 
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | Analytics Foundations | 8 | Metrics, KPIs, funnel analysis, cohort analysis, A/B testing |
-| 02 | SQL for Analytics | 10 | Advanced SQL, window functions, retention/cohort queries, funnel queries |
-| 03 | Python Analytics | 12 | Pandas deep, exploratory data analysis, statistical testing |
-| 04 | Visualization | 10 | Matplotlib, Seaborn, Plotly, Dash, Tableau basics |
-| 05 | Dashboarding & Reporting | 10 | Metabase, Superset, automated reporting, data storytelling |
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Java Fundamentals (OOP, collections, streams, exceptions, I/O) | 12 |
+| 02 | JVM Deep (bytecode, classloading, memory model, GC algorithms, JIT) | 10 |
+| 03 | Concurrency in Java (threads, synchronized, Locks, CompletableFuture, ForkJoin) | 10 |
+| 04 | Enterprise Java (Servlets, JPA/Hibernate, CDI, JMS, JAX-RS) | 12 |
+| 05 | Spring Boot (IoC, AOP, REST, security, data, testing, actuator) | 14 |
+| 06 | Kotlin (null safety, coroutines, extensions, sealed classes, DSL) | 12 |
+| 07 | Android Development (Jetpack Compose, activities, services, Room, WorkManager) | 12 |
+| 08 | Big Data Ecosystem (Hadoop, Spark, Kafka, Flink, Cassandra) | 10 |
+| 09 | Build & Tooling (Maven, Gradle, Jenkins, Sonar, JUnit, Mockito) | 8 |
+| 10 | Production Java (monitoring, profiling, heap dumps, tuning, JMX) | 8 |
 
-**Integration theme:** Complete analytics suite (dashboard + automated reports)
-
----
-
-### 11. QA Automation & Software Testing
-**Prerequisites:** Any programming language
-**Difficulty:** Intermediate
-**Target:** ~50 lessons, 5 phases
-**Status:** ⬜
-
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | Testing Foundations | 8 | Testing pyramid, test types, test design, TDD/BDD |
-| 02 | Unit & Integration Testing | 10 | pytest deep, mocking, fixtures, parametrization, coverage |
-| 03 | API Testing | 10 | REST/GraphQL testing, Postman/Newman, contract testing (Pact) |
-| 04 | UI Automation | 12 | Playwright, Cypress, Selenium, page objects, visual testing |
-| 05 | Performance & Load Testing | 10 | k6, Locust, JMeter, stress testing, bottleneck identification |
-
-**Integration theme:** Complete test suite for a web application (API + UI + performance)
+**Integration theme:** Microservices platform + Android app
 
 ---
 
-### 12. Networking Deep
-**Prerequisites:** Operating systems basics
-**Difficulty:** Advanced
-**Target:** ~40 lessons, 4 phases
-**Status:** ⬜
+### 8. C# / .NET
+**Target:** ~80 lessons, 8 phases  | **Status:** ⬜
 
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | Foundations | 10 | OSI model, TCP/IP, UDP, DNS, HTTP/2, HTTP/3, WebSockets |
-| 02 | Protocols Deep | 12 | TCP deep (flow control, congestion), TLS/SSL, QUIC, BGP, DHCP |
-| 03 | Tools & Analysis | 8 | Wireshark, tcpdump, iperf, nmap, traceroute, netstat |
-| 04 | Production Networking | 10 | Load balancers, proxies (Nginx, HAProxy), CDN, SDN, network policy |
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | C# Fundamentals (OOP, LINQ, async/await, generics, records, pattern matching) | 12 |
+| 02 | .NET Runtime (CLR, JIT, GC, value/reference types, stack/ heap, Span<T>) | 10 |
+| 03 | ASP.NET Core (minimal APIs, MVC, middleware, DI, auth, EF Core) | 14 |
+| 04 | Blazor (components, render tree, JS interop, WASM/Server modes) | 8 |
+| 05 | Game Dev with Unity (ECS, jobs, burst compiler, scriptable objects) | 12 |
+| 06 | F# / Functional .NET (discriminated unions, computation expressions, type providers) | 8 |
+| 07 | MAUI / Desktop (cross-platform UI, WinUI, platform-specific APIs) | 8 |
+| 08 | Advanced (Unsafe/pointers, source generators, AOT, WinRT interop) | 8 |
 
-**Integration theme:** Network analysis and optimization for a web service
-
----
-
-### 13. Database Administration
-**Prerequisites:** SQL basics
-**Difficulty:** Advanced
-**Target:** ~50 lessons, 5 phases
-**Status:** ⬜
-
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | PostgreSQL Deep | 14 | Architecture, configuration, indexing, vacuum, performance tuning |
-| 02 | MySQL Deep | 10 | Architecture, replication, InnoDB, query optimization, partitioning |
-| 03 | MongoDB Deep | 10 | Aggregation pipeline, indexing strategies, replication, sharding |
-| 04 | Redis Deep | 8 | Data structures, persistence, clustering, caching patterns |
-| 05 | Production DBA | 8 | Backup/restore, migration, high availability, monitoring, security |
-
-**Integration theme:** Multi-DB production system design and optimization
+**Integration theme:** Desktop app + Unity game + Web API
 
 ---
 
-### 14. Game Development
-**Prerequisites:** Any OOP language
-**Difficulty:** Advanced
-**Target:** ~50 lessons, 5 phases
-**Status:** ⬜
+### 9. Swift / iOS
+**Target:** ~70 lessons, 7 phases  | **Status:** ⬜
 
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | PyGame / Python Games | 10 | Game loop, sprites, collision, input handling, sound |
-| 02 | Godot Engine | 12 | Scenes, nodes, GDScript, signals, physics, 2D games |
-| 03 | Unity / C# | 12 | Game objects, components, physics, scripting, 3D basics |
-| 04 | Game Design & Art | 8 | Level design, UI/UX, pixel art, animation fundamentals |
-| 05 | Production & Publishing | 8 | Optimization, multiplayer, Steam/App Store, analytics |
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Swift Fundamentals (optionals, structs/classes, protocols, generics, closures) | 12 |
+| 02 | Swift Advanced (result builders, property wrappers, actors, async/await, macros) | 10 |
+| 03 | SwiftUI (views, state, data flow, navigation, animations, previews) | 12 |
+| 04 | UIKit (view controller life cycle, auto layout, delegates, collection/table views) | 10 |
+| 05 | iOS APIs (Core Data, networking, notifications, background modes, SiriKit) | 8 |
+| 06 | Performance & App Store (instruments, profiling, app review, distribution) | 8 |
+| 07 | Metal / GPU Programming (shaders, compute, rendering pipeline, ARKit) | 10 |
 
-**Integration theme:** Complete 2D platformer game
-
----
-
-### 15. Embedded Systems & IoT
-**Prerequisites:** C or Python, electronics basics helpful
-**Difficulty:** Advanced
-**Target:** ~40 lessons, 4 phases
-**Status:** ⬜
-
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | MicroPython & CircuitPython | 10 | GPIO, PWM, ADC, I2C, SPI, UART, sensors |
-| 02 | Raspberry Pi | 10 | GPIO, camera, display, networking, Linux on Pi, automation |
-| 03 | Arduino / C++ | 10 | Digital/analog I/O, interrupts, timers, serial, motors |
-| 04 | IoT Protocols & Cloud | 10 | MQTT, CoAP, HTTP, AWS IoT, ESP32, LoRaWAN, home automation |
-
-**Integration theme:** Smart home system (sensors + cloud + dashboard)
+**Integration theme:** Full-featured iOS app with Metal graphics
 
 ---
 
-### 16. Technical Writing & Documentation
-**Prerequisites:** Any technical background
-**Difficulty:** Beginner → Intermediate
-**Target:** ~30 lessons, 3 phases
-**Status:** ⬜
+### 10. Ruby
+**Target:** ~40 lessons, 4 phases  | **Status:** ⬜
 
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | Writing Fundamentals | 10 | Audience, structure, clarity, conciseness, grammar for tech |
-| 02 | Documentation Types | 10 | API docs, tutorials, how-tos, reference, READMEs, changelogs |
-| 03 | Tools & Publishing | 10 | Markdown deep, Docusaurus, ReadTheDocs, OpenAPI/Swagger, diagrams |
-
-**Integration theme:** Complete documentation suite for an open-source project
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Ruby Fundamentals (blocks, symbols, modules, metaprogramming, duck typing) | 12 |
+| 02 | Ruby Metaprogramming (method_missing, define_method, class macros, DSLs) | 8 |
+| 03 | Ruby on Rails (MVC, Active Record, migrations, views, testing, Action Cable) | 14 |
+| 04 | Ruby Internals (YARV, GC, C extensions, Ractors, Fiber scheduler) | 6 |
 
 ---
 
-### 17. Open Source Contribution & Maintenance
-**Prerequisites:** Any programming language, git
-**Difficulty:** Intermediate
-**Target:** ~20 lessons, 2 phases
-**Status:** ⬜
+### 11. PHP
+**Target:** ~40 lessons, 4 phases  | **Status:** ⬜
 
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | Contributing | 10 | Finding projects, reading codebases, PR workflow, code review, communication |
-| 02 | Maintaining | 10 | Releases, CI/CD for OSS, community management, governance, licensing |
-
-**Integration theme:** Contribute to and maintain one real open-source project
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | PHP Fundamentals (types, OOP, traits, namespaces, closures, attributes) | 10 |
+| 02 | Laravel (IoC, Eloquent, Blade, Artisan, queues, events, broadcasting) | 14 |
+| 03 | WordPress (plugin/theme dev, hooks, REST API, block editor, multisite) | 8 |
+| 04 | PHP Internals (Zend Engine, opcache, JIT, extensions, HHVM) | 8 |
 
 ---
 
-### 18. Blockchain & Web3
-**Prerequisites:** JavaScript, some cryptography basics
-**Difficulty:** Advanced
-**Target:** ~40 lessons, 4 phases
-**Status:** ⬜
+### 12. Scala
+**Target:** ~50 lessons, 5 phases  | **Status:** ⬜
 
-| Phase | Topic | Lessons | Key Content |
-|-------|-------|---------|-------------|
-| 01 | Blockchain Fundamentals | 10 | Consensus, mining, wallets, transactions, gas, Ethereum |
-| 02 | Smart Contracts | 12 | Solidity, EVM, ERC20, ERC721, Hardhat, testing, security |
-| 03 | dApp Development | 10 | ethers.js, web3.js, frontend integration, The Graph, IPFS |
-| 04 | Production Web3 | 8 | DeFi, oracles (Chainlink), Layer 2, audit, deployment |
-
-**Integration theme:** Full dApp (NFT marketplace or DeFi protocol)
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Scala Fundamentals (case classes, pattern matching, options, implicits) | 10 |
+| 02 | Functional Scala (monads, for-comprehensions, type classes, cats/ZIO) | 12 |
+| 03 | Scala Type System (path-dependent types, type members, higher-kinded, variance) | 10 |
+| 04 | Akka / Distributed (actors, streams, clustering, Akka HTTP) | 10 |
+| 05 | Big Data (Spark with Scala, data frames, MLlib, structured streaming) | 8 |
 
 ---
 
-## Dependency Map
+### 13. R
+**Target:** ~40 lessons, 4 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | R Fundamentals (vectors, data frames, factors, lists, S3/S4 objects) | 10 |
+| 02 | Statistical Modeling (lm, glm, mixed models, time series, caret/tidymodels) | 14 |
+| 03 | Data Visualization (ggplot2 deep, lattice, shiny, plotly, leaflet) | 8 |
+| 04 | R Package Dev (R CMD, testthat, Rcpp, roxygen2, CRAN submission) | 8 |
+
+---
+
+### 14. Haskell / OCaml / F#
+**Target:** ~60 lessons, 6 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Pure Functional (purity, laziness, ADTs, pattern matching, type inference) | 12 |
+| 02 | Type Systems (Hindley-Milner, GADTs, type families, multi-param type classes) | 10 |
+| 03 | Monads Deep (Functor, Applicative, Monad, Monad Transformers, Free Monads) | 10 |
+| 04 | Optics (Lens, Prism, Traversal, Iso — van Laarhoven and profunctor) | 8 |
+| 05 | Production Haskell (Servant, persistent, testing, profiling, Haskell Tool Stack) | 10 |
+| 06 | Dependent Types / Idris / Agda (Dependent pattern matching, theorem proving) | 10 |
+
+**Integration theme:** Implement a production web API + a proof assistant
+
+---
+
+### 15. Prolog / Logic Programming
+**Target:** ~20 lessons, 2 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Logic Programming (unification, backtracking, cuts, DCGs, CLP(FD)) | 10 |
+| 02 | Advanced (answer set programming, core.logic, miniKanren, Prolog-ML) | 10 |
+
+---
+
+### 16. Assembly (x86, ARM, RISC-V)
+**Target:** ~50 lessons, 5 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | x86/x64 (registers, instructions, calling conventions, stack frames, syscalls) | 12 |
+| 02 | ARM64 (AArch64, registers, NEON/SIMD, calling convention, Apple Silicon) | 10 |
+| 03 | RISC-V (base ISA, extensions, privileged spec, MMU, interrupts) | 10 |
+| 04 | Reverse Engineering (disassembly, debugging, anti-debug, obfuscation, patching) | 10 |
+| 05 | Exploit Development (buffer overflow, ROP, return-to-libc, heap spray, SEH) | 8 |
+
+---
+
+### 17. WebAssembly
+**Target:** ~30 lessons, 3 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | WASM Core (stack machine, linear memory, imports/exports, wat/wast format) | 10 |
+| 02 | WASI & System Interface (files, networking, clocks, POSIX interop) | 8 |
+| 03 | Production WASM (emscripten, wasm-pack, WASM GC, reference types, component model) | 12 |
+
+---
+
+## 🔵 Tier 3 — Computer Science Foundations
+
+### 18. Operating Systems
+**Target:** ~80 lessons, 8 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Processes & Scheduling (PCB, context switch, scheduling algorithms, fork/exec) | 10 |
+| 02 | Memory Management (paging, segmentation, TLB, page replacement, MMIO) | 10 |
+| 03 | File Systems (inodes, ext4, FAT, NTFS, VFS, journaling, FUSE) | 10 |
+| 04 | I/O & Device Drivers (interrupts, DMA, kernel modules, char/block devices) | 10 |
+| 05 | Synchronization (spinlocks, mutexes, semaphores, condition variables, futex) | 10 |
+| 06 | Networking Stack (socket API, TCP/UDP in kernel, netfilter, eBPF) | 10 |
+| 07 | Linux Kernel Deep (syscalls, procfs, cgroups, namespaces, seccomp, LSM) | 10 |
+| 08 | Build Your Own Kernel (boot, GDT/IDT, paging, interrupts, syscalls, user mode) | 10 |
+
+**Integration theme:** Build a minimal x86 kernel from scratch
+
+---
+
+### 19. Computer Architecture & Organization
+**Target:** ~60 lessons, 6 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Digital Logic (gates, flip-flops, adders, ALU, multiplexers, memory cells) | 10 |
+| 02 | CPU Architecture (datapath, control unit, pipelining, hazards, forwarding) | 12 |
+| 03 | Memory Hierarchy (caches, associativity, replacement, prefetch, NUMA) | 10 |
+| 04 | Instruction-Level Parallelism (superscalar, OoO, branch prediction, speculation) | 8 |
+| 05 | SIMD / Vector Processing (AVX, NEON, SVE, GPU warp/wavefront) | 10 |
+| 06 | Modern Architectures (ARM vs x86, Apple M-series, RISC-V, CXL, chiplet) | 10 |
+
+**Integration theme:** CPU simulator + cache performance analyzer
+
+---
+
+### 20. Algorithms & Data Structures Deep
+**Target:** ~100 lessons, 10 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Asymptotic Analysis (Big-O, amortized, randomized, competitive analysis) | 8 |
+| 02 | Sorting & Selection (quickselect, introselect, radix, counting, timsort) | 10 |
+| 03 | Trees (BST, AVL, red-black, B-trees, segment trees, Fenwick, tries, suffix) | 12 |
+| 04 | Graphs (traversal, shortest paths, MST, max flow, matching, planar) | 14 |
+| 05 | Hashing (rolling hash, perfect hash, consistent hash, Cuckoo, locality-sensitive) | 8 |
+| 06 | Dynamic Programming (knapsack, edit distance, DP on trees/graphs, bitmask) | 12 |
+| 07 | String Algorithms (KMP, Z-algorithm, Manacher, Suffix array/LCP, Aho-Corasick) | 10 |
+| 08 | Geometric Algorithms (convex hull, point location, range trees, KD-tree) | 8 |
+| 09 | Approximation & Randomized (approx algorithms, Monte Carlo, streaming) | 8 |
+| 10 | Advanced (cache-oblivious, succinct data structures, external memory) | 10 |
+
+**Integration theme:** Competitive programming mastery + library implementation
+
+---
+
+### 21. Discrete Mathematics
+**Target:** ~50 lessons, 5 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Logic & Proofs (propositional, predicate, induction, contradiction, combinatorial) | 10 |
+| 02 | Set Theory & Combinatorics (sets, relations, counting, inclusion-exclusion) | 10 |
+| 03 | Number Theory (modular arithmetic, primes, GCD, RSA, Chinese remainder) | 10 |
+| 04 | Graph Theory (trees, coloring, Ramsey, extremal, spectral, random graphs) | 10 |
+| 05 | Algebraic Structures (groups, rings, fields, lattices, boolean algebra) | 10 |
+
+---
+
+### 22. Compiler Design
+**Target:** ~80 lessons, 8 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Lexical Analysis (regex, NFA/DFA, lex/flex, Unicode, tokens) | 8 |
+| 02 | Parsing (recursive descent, LL, LR, LALR, PEG, parser combinators) | 12 |
+| 03 | Semantic Analysis (symbol table, type checking, overload resolution, name binding) | 10 |
+| 04 | Intermediate Representations (AST, IR, SSA, CFG, three-address code) | 8 |
+| 05 | Optimization (constant folding, dead code, CSE, loop unrolling, inlining) | 12 |
+| 06 | Code Generation (instruction selection, register allocation, scheduling) | 10 |
+| 07 | JIT Compilation (tracing JIT, method JIT, tiered compilation, deoptimization) | 10 |
+| 08 | Build Your Own Language (full compiler from scratch: source → binary) | 10 |
+
+**Integration theme:** Full compiler for a custom programming language
+
+---
+
+### 23. Formal Verification & Model Checking
+**Target:** ~40 lessons, 4 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Propositional Logic & SAT (DPLL, CDCL, resolution, #SAT, MaxSAT) | 10 |
+| 02 | SMT Solvers (quantifier-free theories, arrays, bitvectors, Z3 API) | 10 |
+| 03 | Model Checking (CTL, LTL, Kripke, SPIN, NuSMV, symbolic model checking) | 10 |
+| 04 | Proof Assistants (Coq, Lean, Isabelle/HOL, dependent types, extraction) | 10 |
+
+---
+
+### 24. Computational Complexity Theory
+**Target:** ~30 lessons, 3 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Time & Space Complexity (P, NP, PSPACE, EXPTIME, hierarchy theorems) | 12 |
+| 02 | NP-Completeness (reductions, Cook-Levin, approximation hardness) | 10 |
+| 03 | Advanced Topics (interactive proofs, PCP theorem, circuit complexity, quantum) | 8 |
+
+---
+
+### 25. Programming Language Theory
+**Target:** ~50 lessons, 5 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Lambda Calculus (Church encoding, combinators, reduction strategies, Y combinator) | 10 |
+| 02 | Type Theory (simply typed, Hindley-Milner, system F, dependent types) | 12 |
+| 03 | Operational & Denotational Semantics (small-step, big-step, domain theory) | 10 |
+| 04 | Effect Systems (algebraic effects, handlers, monads, effect handlers in practice) | 8 |
+| 05 | Substructural Logics (linear, affine, relevant, ordered — Rust borrow checker) | 10 |
+
+---
+
+## 🟣 Tier 4 — Systems & Infrastructure
+
+### 26. Distributed Systems
+**Target:** ~80 lessons, 8 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Foundations (CAP, FLP, PACELC, time/clocks, causality, vector clocks) | 10 |
+| 02 | Consensus (Paxos, Raft, Zab, PBFT, HotStuff, blockchain consensus) | 12 |
+| 03 | Replication (primary-backup, multi-primary, quorum, chain, state machine) | 8 |
+| 04 | Distributed Storage (GFS, HDFS, Cassandra, Dynamo, Spanner, Ceph) | 12 |
+| 05 | Distributed Compute (MapReduce, Spark, Flink, Ray, Dask) | 10 |
+| 06 | Distributed Coordination (ZooKeeper, etcd, Chubby, distributed locks) | 8 |
+| 07 | Streaming & Messaging (Kafka deep, Pulsar, NATS, RabbitMQ, ZeroMQ) | 10 |
+| 08 | Distributed Transactions (2PC, 3PC, saga, TCC, idempotency, exactly-once) | 10 |
+
+**Integration theme:** Build a distributed key-value store from scratch
+
+---
+
+### 27. Database Internals
+**Target:** ~70 lessons, 7 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Storage Engines (B-trees, LSM-trees, append-only, columnar, bitmap) | 12 |
+| 02 | Buffer Pool & Caching (page management, replacement, prefetching, mmap) | 8 |
+| 03 | Indexing (hash, B+tree, GiST, BRIN, inverted, vector (HNSW, IVF)) | 10 |
+| 04 | Query Processing (parser, optimizer, cost estimation, join algorithms, pushdown) | 12 |
+| 05 | Transaction Processing (ACID, MVCC, isolation levels, locking, OCC, SSI) | 10 |
+| 06 | Recovery & Logging (WAL, ARIES, checkpointing, fuzzy dumps, point-in-time) | 8 |
+| 07 | Distributed Databases (sharding, consistent hashing, distributed Joins, HTAP) | 10 |
+
+**Integration theme:** Build a toy SQL database engine from scratch
+
+---
+
+### 28. Performance Engineering
+**Target:** ~60 lessons, 6 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Profiling (CPU, memory, I/O, wall-clock, sampling, instrumentation, flamegraphs) | 10 |
+| 02 | CPU Optimization (instruction-level, pipelining, branch prediction, cache misses) | 10 |
+| 03 | Memory Optimization (allocators, cache lines, false sharing, NUMA, huge pages) | 10 |
+| 04 | I/O Optimization (io_uring, AIO, mmap, DMA, SPDK, DPDK) | 10 |
+| 05 | Concurrency Optimization (lock-free, wait-free, RCU, hazard pointers, MPMC) | 10 |
+| 06 | Benchmarking & Statistics (statistical rigor, warmup, measurement, A/B testing) | 10 |
+
+**Integration theme:** Performance optimization case study (database, web server, game)
+
+---
+
+### 29. Cloud Architecture & Infrastructure
+**Target:** ~100 lessons, 10 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | AWS Deep (compute, storage, networking, serverless, databases, AI services) | 16 |
+| 02 | GCP Deep (compute, storage, networking, data, ML, Kubernetes) | 12 |
+| 03 | Azure Deep (compute, storage, networking, identity, DevOps, AI) | 12 |
+| 04 | Multi-Cloud & Abstraction (Terraform + Pulumi + Crossplane + Porter) | 8 |
+| 05 | Containers Deep (Docker internals, containerd, runc, cgroups, namespaces) | 10 |
+| 06 | Kubernetes Deep (scheduler, controller manager, API, CNI, CSI, admission) | 14 |
+| 07 | Service Mesh (Istio, Linkerd, Consul, Envoy, mTLS, traffic management) | 8 |
+| 08 | Observability (OpenTelemetry, Prometheus deep, Grafana, Loki, Tempo) | 10 |
+| 09 | CI/CD Deep (GitHub Actions, ArgoCD, GitOps, canary, blue-green, feature flags) | 6 |
+| 10 | Cost & Security (FinOps, IAM deep, policy as code, secrets, compliance) | 4 |
+
+---
+
+## 🟠 Tier 5 — Specialized Domains
+
+### 30. Computer Graphics
+**Target:** ~80 lessons, 8 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Rendering Pipeline (rasterization, transformations, clipping, z-buffer) | 10 |
+| 02 | Shaders (vertex, fragment, compute, geometry, tessellation, ray tracing) | 12 |
+| 03 | Lighting & Materials (Phong, PBR, subsurface scattering, ambient occlusion) | 10 |
+| 04 | Ray Tracing (Whitted, path tracing, bidirectional, photon mapping, denoising) | 10 |
+| 05 | Geometry Processing (meshes, subdivision, Boolean, simplification, parameterization) | 10 |
+| 06 | Animation (skeletal, blend shapes, skinning, IK, physics, cloth, fluids) | 10 |
+| 07 | GPU Architecture (CUDA, warp scheduling, shared memory, tensor cores) | 8 |
+| 08 | Real-Time Graphics (OpenGL/Vulkan, deferred shading, LOD, streaming) | 10 |
+
+**Integration theme:** Software renderer + real-time 3D engine
+
+---
+
+### 31. Cryptography
+**Target:** ~50 lessons, 5 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Symmetric (AES, ChaCha20, block ciphers, modes, padding, AEAD) | 10 |
+| 02 | Asymmetric (RSA, ECC, DH, ECDH, Ed25519, post-quantum, Kyber) | 12 |
+| 03 | Hash Functions (SHA-2/3, BLAKE, Merkle trees, SMT, polynomial commitments) | 8 |
+| 04 | Protocols (TLS 1.3, Signal, Noise, OPAQUE, PAKE, secure enclaves) | 10 |
+| 05 | Zero-Knowledge Proofs (SNARKs, STARKs, Bulletproofs, circom, bellman) | 10 |
+
+**Integration theme:** Implement a cryptographic protocol from scratch
+
+---
+
+### 32. Robotics
+**Target:** ~60 lessons, 6 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Kinematics & Dynamics (forward/inverse, Jacobian, Euler-Lagrange, ROS 2) | 12 |
+| 02 | Control Theory (PID, LQR, MPC, adaptive, robust, nonlinear) | 12 |
+| 03 | Perception (sensor fusion, Kalman, SLAM, point clouds, object detection) | 12 |
+| 04 | Planning (RRT, A*, CHOMP, STOMP, trajectory optimization) | 8 |
+| 05 | Manipulation (grasping, force control, impedance, dexterous manipulation) | 8 |
+| 06 | Locomotion (walking, running, balance, MPC for quadrupeds, bipeds) | 8 |
+
+---
+
+### 33. AR / VR / Spatial Computing
+**Target:** ~50 lessons, 5 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Spatial Math (quaternions, transformation matrices, coordinate systems) | 8 |
+| 02 | Rendering for XR (stereoscopic, foveated, reprojection, pass-through) | 10 |
+| 03 | Tracking (SLAM, VIO, inside-out, eye tracking, hand tracking) | 12 |
+| 04 | Interaction (raycasting, hand gestures, gaze, haptics, spatial UI) | 10 |
+| 05 | Platforms (ARKit, ARCore, OpenXR, WebXR, Unity XR Toolkit) | 10 |
+
+---
+
+### 34. Game Engine Development
+**Target:** ~60 lessons, 6 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | ECS Architecture (entities, components, systems, archetypes, chunks) | 10 |
+| 02 | Game Loop & Physics (fixed timestep, interpolation, broad/narrow phase, constraint) | 12 |
+| 03 | Audio (DSP, mixing, spatial audio, FMOD/Wwise integration, MIDI) | 8 |
+| 04 | Networking for Games (replication, prediction, reconciliation, rollback, lobbies) | 10 |
+| 05 | Tools & Pipeline (asset pipeline, serialization, hot reload, debug UI) | 10 |
+| 06 | Full Engine (renderer + physics + audio + tools + networking) | 10 |
+
+**Integration theme:** Build a complete 2D/3D game engine
+
+---
+
+### 35. Audio / DSP Programming
+**Target:** ~40 lessons, 4 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Digital Signal Processing (sampling, Fourier, filters, convolution, modulation) | 12 |
+| 02 | Audio Synthesis (oscillators, envelopes, FM, granular, physical modeling) | 10 |
+| 03 | Audio Effects (reverb, delay, chorus, compression, EQ, distortion) | 8 |
+| 04 | Real-Time Audio (JUCE, PortAudio, ASIO, MIDI, plugin dev, VST/AU) | 10 |
+
+---
+
+### 36. Computer Networks Deep
+**Target:** ~60 lessons, 6 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Physical & Link Layer (Ethernet, WiFi, switching, ARP, VLAN, STP) | 10 |
+| 02 | IP & Routing (IPv4/IPv6, OSPF, BGP, MPLS, segment routing, VXLAN) | 12 |
+| 03 | Transport (TCP deep, QUIC, SCTP, DCCP, congestion control algorithms) | 10 |
+| 04 | HTTP & Web (HTTP/1.1, HTTP/2, HTTP/3, WebSockets, WebTransport, CDN) | 10 |
+| 05 | DNS & Load Balancing (DNS deep, Anycast, global load balancing, DoH/DoT) | 8 |
+| 06 | Network Security (IPsec, WireGuard, TLS deep, DDoS mitigation, WAF) | 10 |
+
+---
+
+### 37. FinTech & Trading Systems
+**Target:** ~40 lessons, 4 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Market Microstructure (order types, matching engines, L2 data, dark pools) | 10 |
+| 02 | Low-Latency Systems (kernel bypass, DPDK, FPGA, nanosecond optimization) | 12 |
+| 03 | Trading Strategies (market making, arbitrage, momentum, stat arb, HFT) | 10 |
+| 04 | Risk & Compliance (VaR, stress testing, position keeping, regulation) | 8 |
+
+---
+
+### 38. Bioinformatics / Computational Biology
+**Target:** ~40 lessons, 4 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Sequence Analysis (alignment, BLAST, HMMER, assembly, phylogenetics) | 12 |
+| 02 | Structural Biology (protein folding, molecular dynamics, docking, AlphaFold) | 10 |
+| 03 | Genomics (variant calling, GWAS, transcriptomics, single-cell, epigenomics) | 10 |
+| 04 | Systems Biology (network inference, ODE modeling, constraint-based, Boolean) | 8 |
+
+---
+
+## 🟤 Tier 6 — Paradigms & Practices
+
+### 39. Software Architecture & Design Patterns
+**Target:** ~60 lessons, 6 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | SOLID & Principles (single responsibility, open/closed, Liskov, DI) | 8 |
+| 02 | Creational Patterns (factory, builder, singleton, prototype, abstract factory) | 8 |
+| 03 | Structural Patterns (adapter, bridge, composite, decorator, facade, proxy) | 8 |
+| 04 | Behavioral Patterns (observer, strategy, command, state, visitor, mediator) | 10 |
+| 05 | Architecture Patterns (layered, hexagonal, CQRS, event sourcing, DDD) | 14 |
+| 06 | Enterprise Patterns (saga, outbox, throttling, circuit breaker, retry, bulkhead) | 12 |
+
+---
+
+### 40. API Design
+**Target:** ~40 lessons, 4 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | REST Deep (resources, HATEOAS, versioning, pagination, caching, idempotency) | 10 |
+| 02 | GraphQL (schema, resolvers, N+1, subscriptions, federation, Apollo) | 10 |
+| 03 | gRPC & Protobuf (services, streams, interceptors, gateway, grpc-web) | 10 |
+| 04 | API Security (OAuth 2.1, OIDC, JWT, API keys, rate limiting, CORS) | 10 |
+
+---
+
+### 41. Developer Experience & Tooling
+**Target:** ~40 lessons, 4 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Editor Deep (VS Code extensions, LSP, DAP, tree-sitter, snippets) | 10 |
+| 02 | Git Deep (internals, hooks, rebase, bisect, worktrees, submodules, large files) | 10 |
+| 03 | Dev Containers & Environments (Docker dev, nix, devbox, direnv, taskfile) | 10 |
+| 04 | Build & Package Systems (npm/pip/cargo/go - package lifecycle, registries, CI) | 10 |
+
+---
+
+### 42. UI/UX Design
+**Target:** ~30 lessons, 3 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Design Principles (color, typography, layout, hierarchy, accessibility, Figma) | 12 |
+| 02 | Interaction Design (user research, wireframes, prototypes, usability testing) | 10 |
+| 03 | Design Systems (component libraries, tokens, theming, documentation) | 8 |
+
+---
+
+## ⚫ Tier 7 — Math & Science Frontier
+
+### 43. Quantum Computing
+**Target:** ~40 lessons, 4 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Qubits & Gates (superposition, measurement, entanglement, Bloch sphere) | 10 |
+| 02 | Quantum Algorithms (Deutsch-Jozsa, Grover, Shor, QFT, HHL, VQE) | 12 |
+| 03 | Quantum Hardware (superconducting, trapped ion, photonic, error correction) | 8 |
+| 04 | Quantum Programming (Qiskit, Cirq, PennyLane, Q#, quantum ML) | 10 |
+
+---
+
+### 44. Computational Physics
+**Target:** ~40 lessons, 4 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Numerical Methods (ODE, PDE, finite difference, FEM, Monte Carlo) | 12 |
+| 02 | Classical Mechanics (N-body, molecular dynamics, lattice Boltzmann) | 10 |
+| 03 | Electromagnetics & Optics (FDTD, ray tracing, Maxwell solvers) | 8 |
+| 04 | Quantum Mechanics (Schrödinger solver, DFT, tight-binding, tensor networks) | 10 |
+
+---
+
+### 45. Formal Languages & Automata Theory
+**Target:** ~30 lessons, 3 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Regular Languages (DFA, NFA, regex, pumping lemma, Myhill-Nerode) | 10 |
+| 02 | Context-Free Languages (CFG, PDA, parse trees, Chomsky normal form, CYK) | 10 |
+| 03 | Turing Machines & Computability (decidability, halting problem, reductions) | 10 |
+
+---
+
+### 46. Category Theory for Programmers
+**Target:** ~30 lessons, 3 phases  | **Status:** ⬜
+
+| Phase | Topic | Lessons |
+|-------|-------|---------|
+| 01 | Categories & Functors (objects, morphisms, functors, natural transformations) | 10 |
+| 02 | Universal Constructions (products, coproducts, limits, colimits, adjunctions) | 10 |
+| 03 | Monads & Algebras (monads, Kleisli, Eilenberg-Moore, F-algebras, recursion schemes) | 10 |
+
+---
+
+## 📊 Total Scope
+
+| Category | Topics | Est. Lessons |
+|----------|--------|-------------|
+| **✅ Complete** | 2 (Python + Frameworks, ML/AI) | ~862 |
+| **⬜ Planned** | 44 topics | ~2,500+ |
+| **Grand Total** | **46 subjects** | **~3,400+** |
 
 ```
-JavaScript/TS  ─┬→ React Native (Mobile)
-                ├→ Next.js (Web)
-                └→ Blockchain/Web3 (if +crypto)
+Python + Frameworks  ── DONE ✅ (491 lessons)
+Machine Learning      ── DONE ✅ (371 lessons)
 
-Python (done)  ─┬→ Django Backend
-                ├→ ML/AI (if +math)
-                ├→ Data Engineering (if +SQL)
-                └→ Embedded/IoT (if +hardware)
-
-DevOps/Cloud   ─┬→ K8s deep
-                ├→ Security (if +networking)
-                └→ Database Admin (if +DB)
-
-Any language   ─→ QA Automation
-                  → System Design
-                  → Technical Writing
-                  → Open Source
+Next priority:
+  JavaScript/TS       ── ~120  (web foundation)
+  C/C++               ── ~120  (systems foundation)
+  Rust                ── ~100  (modern systems)
+  OS                  ── ~80   (kernel from scratch)
+  Algorithms Deep     ── ~100  (interview + mastery)
+  Distributed Systems ── ~80   (senior/staff level)
+  Database Internals  ── ~70   (build your own DB)
+  Compiler Design     ── ~80   (build your own language)
 ```
 
----
-
-## Recommended Build Order
-
-```
-1. JavaScript/TypeScript  ← start here (enables web dev)
-2. Django Backend         ← full-stack with Python
-3. DevOps & Cloud         ← now you can deploy
-4. System Design          ← now you can architect
-5. ML/AI or Data Eng      ← choose your path
-6. Mobile or Security     ← expand your reach
-```
-
-Each skill is a standalone `skills/<topic>/` directory with the same structure as `python/`.
-
----
-
-**To prioritize:** Pick the first skill you want built. I'll start with phase 1 fleshed out (all lesson files + code + practice), exactly like the Python skill.
+Each topic is a standalone `skills/<topic>/` directory with lessons, code, practice, and INDEX.
